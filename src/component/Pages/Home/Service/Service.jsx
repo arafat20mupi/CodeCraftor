@@ -3,38 +3,37 @@ import React from 'react';
 const Service = () => {
     return (
         <div className="container mx-auto px-4 py-8">
-            <div className="grid gap-8 md:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                 {/* Web Development */}
-                <div className="flex flex-col items-center text-center">
-                    <div className="bg-white h-[300px] hover:shadow-2xl transition-shadow p-4 rounded-lg shadow-md ">
+                <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1200" className="flex flex-col items-center text-center">
+                    <div className="bg-white h-full hover:shadow-2xl transition-shadow p-4 rounded-lg shadow-md">
                         <img
                             src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt="Web Development"
-                            className="w-full h-auto mb-4 mt-1"
+                            className="w-full h-48 object-cover mb-4 rounded-md"
                         />
-                        <button className="bg-blue-200 text-blue-800 py-2 px-4 mt-8 rounded-lg">
+                        <button className="bg-blue-200 text-blue-800 py-2 px-4 mt-4 rounded-lg">
                             Web Development
                         </button>
                     </div>
                 </div>
                 {/* Mobile Development */}
-                <div className="flex flex-col items-center text-center">
-                    <div className="bg-white h-[300px] hover:shadow-2xl transition-shadow p-4 rounded-lg shadow-md ">
+                <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1200" className="flex flex-col items-center text-center">
+                    <div className="bg-white h-full hover:shadow-2xl transition-shadow p-4 rounded-lg shadow-md">
                         <img
                             src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="Web Development"
-                            className="w-full h-auto mb-4 mt-1"
+                            alt="Mobile Development"
+                            className="w-full h-48 object-cover mb-4 rounded-md"
                         />
-                        <button className="bg-blue-200 text-blue-800 py-2 px-4 mt-8 rounded-lg">
+                        <button className="bg-blue-200 text-blue-800 py-2 px-4 mt-4 rounded-lg">
                             Mobile Development
                         </button>
                     </div>
                 </div>
-
                 {/* Development Text */}
-                <div className="flex flex-col bg-white p-4 rounded-lg justify-center items-center text-justify h-[300px] hover:shadow-2xl transition-shadow">
+                <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1200" className="flex flex-col bg-white p-4 rounded-lg justify-center items-center text-justify hover:shadow-2xl transition-shadow">
                     <div>
-                        <div className="text-blue-600 mb-1">
+                        <div className="text-blue-600 mb-4">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"

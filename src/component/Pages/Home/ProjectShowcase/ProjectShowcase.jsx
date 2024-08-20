@@ -7,9 +7,9 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 
 export default function ProjectShowcase() {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-between p-4 md:p-8 lg:p-28 bg-gray-100">
+        <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col md:flex-row items-center justify-between p-4 md:p-8 lg:p-28 bg-gray-100">
             {/* Left Section */}
-            <div className="md:w-1/2 w-full text-center md:text-left mb-8 md:mb-0">
+            <div data-aos="fade-right" data-aos-duration="2500" className="md:w-1/2 w-full text-center md:text-left mb-8 md:mb-0">
                 <h2 className="text-blue-500 uppercase text-sm tracking-widest mb-2">Projects</h2>
                 <h1 className="text-3xl font-bold mb-4">Showcase of our recognized work</h1>
                 <p className="text-gray-600 mb-4">
@@ -29,7 +29,7 @@ export default function ProjectShowcase() {
             </div>
 
             {/* Right Section with Swiper */}
-            <div className="md:w-1/2 w-full">
+            <div data-aos="fade-left" data-aos-duration="2500" className="md:w-1/2 w-full">
                 <Swiper
                     watchSlidesProgress={true}
                     slidesPerView={1}

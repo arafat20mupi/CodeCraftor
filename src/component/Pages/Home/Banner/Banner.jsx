@@ -1,8 +1,11 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const Banner = () => {
     return (
         <section className="bg-gray-50 py-12 px-6 md:px-12 lg:px-24 flex flex-col lg:flex-row items-center">
             {/* Left Text Section */}
-            <div className="text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="10" className="text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0">
                 <h5 className="text-indigo-600 font-semibold uppercase">Empowerment</h5>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mt-4">
                     Seamless IT for your business, boosting your growth.
@@ -27,7 +30,7 @@ const Banner = () => {
             </div>
 
             {/* Right Image & Info Section */}
-            <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="10" className="lg:w-1/2 flex flex-col items-center lg:items-start">
                 <div className="relative p-6 rounded-lg">
                     <img
                         srcSet="
@@ -39,7 +42,7 @@ const Banner = () => {
                         alt="IT Professional"
                         className="rounded-lg w-full object-cover"
                     />
-                    <div className="bg-white p-10 rounded-lg shadow-lg flex items-center justify-center gap-4 text-center w-full mt-4">
+                    <div data-aos="zoom-in" data-aos-duration="2200" className="md:absolute md:bottom-[179px] md:w-[280px] bg-white p-10 shadow-lg md:shadow-none rounded-lg flex items-center justify-center gap-4 text-center  mt-4">
                         <img src="https://wpriverthemes.com/HTML/synck/assets/imgs/icon1.svg" alt="Experience Icon" />
                         <div className="flex gap-4">
                             <div className="text-indigo-600 text-3xl font-bold">+8</div>
@@ -48,7 +51,7 @@ const Banner = () => {
                     </div>
 
                     <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="bg-white p-8 rounded-lg shadow-lg flex items-center justify-center text-center">
+                        <div data-aos="zoom-in" data-aos-duration="2500" className="bg-white p-8 rounded-lg shadow-lg flex items-center justify-center text-center">
                             <div className="flex gap-1 items-center justify-center">
                                 <div className="avatar-group -space-x-6 rtl:space-x-reverse">
                                     <div className="avatar">
@@ -78,7 +81,7 @@ const Banner = () => {
                             </div>
                         </div>
 
-                        <div className="bg-white p-8 rounded-lg shadow-lg flex items-center justify-center text-center">
+                        <div data-aos="zoom-in" data-aos-duration="3000" className="bg-white p-8 rounded-lg shadow-lg flex items-center justify-center text-center">
                             <div>
                                 <div className="flex items-center justify-between text-left space-x-8">
                                     <div>

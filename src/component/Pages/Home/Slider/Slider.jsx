@@ -45,7 +45,7 @@ export const Slider = () => {
     }, [sliderItems.length]);
 
     return (
-        <div className="relative mx-auto w-full max-w-6xl my-10 px-4">
+        <div data-aos="fade-up" data-aos-duration="2000" className="relative mx-auto w-full max-w-6xl my-10 px-4">
             {/* arrow left */}
             <button
                 onClick={prevSlider}

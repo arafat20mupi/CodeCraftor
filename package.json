@@ -15,6 +15,8 @@
     "@mui/icons-material": "^5.16.7",
     "@mui/lab": "^5.0.0-alpha.173",
     "@mui/material": "^5.16.7",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.28",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.3.1",
@@ -25,7 +27,8 @@
     "rsuite": "^5.69.0",
     "slick-carousel": "^1.8.1",
     "sort-by": "^1.2.0",
-    "swiper": "^11.1.9"
+    "swiper": "^11.1.9",
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

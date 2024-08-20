@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="w-full mx-auto px-4 py-24">
             <div className="flex flex-col lg:flex-row w-full lg:w-[70%] mx-auto gap-8">
                 {/* Contact Form Section */}
-                <div data-aos="fade-right" data-aos-duration="1000" className="w-full lg:w-[512px] pt-[78px] pb-[62px] px-[62px] bg-blue-50 p-8 rounded-lg shadow-lg mb-8 lg:mb-0">
+                <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" className="w-full lg:w-[512px] pt-[78px] pb-[62px] px-[62px] bg-blue-50 p-8 rounded-lg shadow-lg mb-8 lg:mb-0">
                     <h2 className="text-blue-800 text-xl font-bold mb-4">CONTACT</h2>
                     <h1 className="text-3xl font-bold mb-6">Let's get in touch</h1>
                     <p className="text-lg mb-4">
@@ -69,7 +69,7 @@ const Contact = () => {
                 </div>
 
                 {/* Contact Info Section */}
-                <div data-aos="fade-left" data-aos-duration="1000" className="w-full lg:w-[280px] bg-blue-50 p-12 rounded-lg shadow-lg">
+                <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" className="w-full lg:w-[280px] bg-blue-50 p-12 rounded-lg shadow-lg">
                     <div className="space-y-6 mt-14">
                         <div className='space-y-5'>
                             <BiSupport className='text-4xl text-blue-600' />

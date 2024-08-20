@@ -3,7 +3,7 @@ import React from 'react';
 const TimeLine = () => {
     return (
         <div className="flex flex-col md:flex-row gap-5 items-center py-32 px-6 md:px-28">
-            <div data-aos="fade-right" data-aos-duration="2000" className="w-full md:w-[40%] mb-8 md:mb-0">
+            <div data-aos="zoom-in" data-aos-duration="1700" className="w-full md:w-[40%] mb-8 md:mb-0">
                 <p className="text-blue-500 text-sm uppercase tracking-wide">Consulting Excellence</p>
                 <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mt-2">Best pathway to our clients.</h1>
                 <p className="text-gray-600 mt-4">
@@ -22,7 +22,7 @@ const TimeLine = () => {
                 </ul>
             </div>
 
-            <div data-aos="fade-left" data-aos-duration="2000" className="relative w-full md:w-[60%]">
+            <div data-aos="zoom-in" data-aos-duration="1700" className="relative w-full md:w-[60%]">
                 {/* Timeline circles in the middle */}
                 <div className="absolute left-[75%] md:left-1/2 transform md:-translate-x-1/2 top-0 h-full flex flex-col items-center">
                     <div className="bg-blue-100 rounded-full w-8 h-8 md:w-10 md:h-10 flex items-center justify-center">

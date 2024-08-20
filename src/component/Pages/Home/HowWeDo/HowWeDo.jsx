@@ -3,8 +3,8 @@ import React from "react";
 const HowWeDo = () => {
     return (
         <section className="bg-gray-900 text-white py-16">
-            <div className="w-[80%] mx-auto px-4">
-                <div data-aos="fade-right" data-aos-duration="1200" className="text-left mb-12">
+            <div className="w-full md:w-[80%] mx-auto px-4">
+                <div data-aos="zoom-in" data-aos-duration="1700" className="text-left mb-12">
                     <h3 className="text-blue-500 uppercase mb-4">Our Model</h3>
                     <h2 className="text-4xl font-bold">How we do</h2>
                     <p className="mt-4 text-gray-300">
@@ -12,7 +12,7 @@ const HowWeDo = () => {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div data-aos="fade-right" data-aos-duration="1500" className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
+                    <div data-aos="zoom-in" data-aos-duration="1700" className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
                         <div className="flex items-center gap-4">
                             <div className="text-4xl text-blue-500">
                                 🧠 {/* Brainstorming Icon */}
@@ -42,7 +42,7 @@ const HowWeDo = () => {
                         </div>
                     </div>
 
-                    <div data-aos="fade-left" data-aos-duration="1500" className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
+                    <div data-aos="zoom-in" data-aos-duration="1700" className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
                         <div className="flex items-center gap-4">
                             <div className="text-4xl text-blue-500">🖥️</div>
                             <div>
@@ -56,7 +56,7 @@ const HowWeDo = () => {
                         </div>
                     </div>
 
-                    <div data-aos="fade-right" data-aos-duration="1500" className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
+                    <div data-aos="zoom-in" data-aos-duration="1700" className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
                         <div className="flex items-center gap-4">
                             <div className="text-4xl text-blue-500">📈</div>
                             <div>
@@ -84,7 +84,7 @@ const HowWeDo = () => {
                         </div>
                     </div>
 
-                    <div data-aos="fade-left" data-aos-duration="1500" className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
+                    <div className="relative p-6 bg-gray-800 rounded-lg shadow-lg">
                         <div className="flex items-center gap-4">
                             <div className="text-4xl text-blue-500">📢</div>
                             <div>
@@ -98,7 +98,7 @@ const HowWeDo = () => {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1200" className="mt-12 text-left">
+                <div data-aos="zoom-in" data-aos-duration="1700" className="mt-12 text-left">
                     <a
                         href="#"
                         className="bg-blue-500 text-white py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 transition duration-300"

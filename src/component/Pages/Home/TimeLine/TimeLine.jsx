@@ -40,17 +40,17 @@ const TimeLine = () => {
 
                 <div className="space-y-4 md:space-y-8 pt-8">
                     {/* Left Position */}
-                    <div className="bg-blue-50 p-3 md:p-4 rounded-lg w-[200px] md:w-[300px] md:ml-[55%] -mt-14">
+                    <div className="bg-blue-50 p-3 md:p-4 rounded-lg w-[200px] md:w-[300px] md:ml-[55%] -mt-14 hover:bg-blue-100 hover:shadow-lg transform transition-all duration-300 hover:-translate-y-2">
                         <h3 className="font-semibold text-gray-800 text-sm md:text-base">Discovery and Analysis</h3>
                         <p className="text-gray-600 text-xs md:text-sm">Perform an analysis of the client's existing IT systems.</p>
                     </div>
                     {/* Right Position */}
-                    <div className="bg-blue-50 p-3 md:p-4 rounded-lg w-[200px] md:w-[300px] md:ml-[6%]">
+                    <div className="bg-blue-50 p-3 md:p-4 rounded-lg w-[200px] md:w-[300px] md:ml-[6%] hover:bg-blue-100 hover:shadow-lg transform transition-all duration-300 hover:-translate-y-2">
                         <h3 className="font-semibold text-gray-800 text-sm md:text-base">Tailored Solutions</h3>
                         <p className="text-gray-600 text-xs md:text-sm">Develop IT solutions based on the analysis phase.</p>
                     </div>
                     {/* Left Position */}
-                    <div className="bg-blue-50 p-3 md:p-4 rounded-lg w-[200px] md:w-[300px] md:ml-[55%] -mt-14">
+                    <div className="bg-blue-50 p-3 md:p-4 rounded-lg w-[200px] md:w-[300px] md:ml-[55%] -mt-14 hover:bg-blue-100 hover:shadow-lg transform transition-all duration-300 hover:-translate-y-2">
                         <h3 className="font-semibold text-gray-800 text-sm md:text-base">Deployment and Support</h3>
                         <p className="text-gray-600 text-xs md:text-sm">Regularly communicate with our client to address any concern.</p>
                     </div>

@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io';
+import logo from '../../../assets/images/logo.jpg';
 
 const Navbar = () => {
     const [activeItem, setActiveItem] = useState(null);
@@ -11,13 +12,11 @@ const Navbar = () => {
     const menuRef = useRef(null);
 
     const handleClickOutside = (event) => {
-        if (dropdown1Ref.current && !dropdown1Ref.current.contains(event.target)) {
-            setActiveItem(null);
-        }
-        if (dropdown2Ref.current && !dropdown2Ref.current.contains(event.target)) {
-            setActiveItem(null);
-        }
-        if (dropdown3Ref.current && !dropdown3Ref.current.contains(event.target)) {
+        if (
+            (dropdown1Ref.current && !dropdown1Ref.current.contains(event.target)) ||
+            (dropdown2Ref.current && !dropdown2Ref.current.contains(event.target)) ||
+            (dropdown3Ref.current && !dropdown3Ref.current.contains(event.target))
+        ) {
             setActiveItem(null);
         }
         if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -33,15 +32,15 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="bg-white shadow-md fixed top-0 w-full z-50">
+        <nav className="bg-[#eceadd] shadow-md fixed top-0 w-full z-50">
             <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo Section */}
                     <div className="flex items-center">
                         <img
-                            src="/path/to/logo.png"
+                            src={logo}
                             alt="Synck Logo"
-                            className="h-8 w-auto"
+                            className="h-10 w-auto rounded-full"
                         />
                         <span className="ml-2 text-xl font-semibold">SYNCK</span>
                     </div>
@@ -79,45 +78,23 @@ const Navbar = () => {
 
                     {/* Desktop Links Section */}
                     <div className="hidden sm:flex sm:items-center sm:space-x-6">
-                        <div ref={dropdown1Ref} className="relative">
-                            <button
-                                onClick={() => setActiveItem(activeItem === 'home' ? null : 'home')}
-                                className="flex items-center gap-1 text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
-                            >
-                                Home
-                            </button>
-                        </div>
-
-                        <div ref={dropdown2Ref} className="relative">
-                            <button
-                                onClick={() => setActiveItem(activeItem === 'company' ? null : 'company')}
-                                className="flex items-center gap-1 text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
-                            >
-                                Company <IoMdArrowDropdown className='text-2xl' />
-                            </button>
-                            {activeItem === 'company' && (
-                                <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md">
-                                    <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                                        About Us
-                                    </a>
-                                    <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                                        Team
-                                    </a>
-                                    <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                                        Careers
-                                    </a>
-                                </div>
-                            )}
-                        </div>
-
+                        <a href="#" className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out">
+                            Home
+                        </a>
+                        <a href="#" className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out">
+                            Company
+                        </a>
+                        <a href="#" className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out">
+                            Portfolio
+                        </a>
                         <div ref={dropdown3Ref} className="relative">
                             <button
-                                onClick={() => setActiveItem(activeItem === 'portfolio' ? null : 'portfolio')}
+                                onClick={() => setActiveItem(activeItem === 'Services' ? null : 'Services')}
                                 className="flex items-center gap-1 text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
                             >
-                                Portfolio <IoMdArrowDropdown className='text-2xl' />
+                                Services <IoMdArrowDropdown className='text-2xl' />
                             </button>
-                            {activeItem === 'portfolio' && (
+                            {activeItem === 'Services' && (
                                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md">
                                     <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
                                         Projects
@@ -131,10 +108,6 @@ const Navbar = () => {
                                 </div>
                             )}
                         </div>
-
-                        <a href="#" className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out">
-                            Services
-                        </a>
                         <a href="#" className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out">
                             FAQ
                         </a>
@@ -142,16 +115,7 @@ const Navbar = () => {
 
                     {/* Desktop Contact Section */}
                     <div className="hidden sm:flex sm:items-center sm:space-x-4">
-                        <a href="tel:+19387407555" className="text-blue-600 hover:underline">
-                            Call Us ↗
-                        </a>
-                        <span className="text-gray-800">+1-938-740-7555</span>
-                        <a
-                            href="#"
-                            className="px-4 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition duration-200 ease-in-out"
-                        >
-                            Contact Us
-                        </a>
+                        <button className="btn btn-outline text-[#183282] rounded-xl border border-[#FF9A63]">Contact us</button>
                     </div>
                 </div>
             </div>
@@ -181,45 +145,23 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#" className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md">
+                        Home
+                    </a>
+                    <a href="#" className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md">
+                        Company
+                    </a>
+                    <a href="#" className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md">
+                        Portfolio
+                    </a>
                     <div className="relative">
                         <button
-                            onClick={() => setActiveItem(activeItem === 'home' ? null : 'home')}
+                            onClick={() => setActiveItem(activeItem === 'Services' ? null : 'Services')}
                             className="flex items-center justify-between w-full text-gray-800 hover:bg-gray-100 px-3 py-2 rounded-md"
                         >
-                            Home
+                            Services <IoMdArrowDropdown className="text-2xl" />
                         </button>
-                    </div>
-
-                    <div className="relative">
-                        <button
-                            onClick={() => setActiveItem(activeItem === 'company' ? null : 'company')}
-                            className="flex items-center justify-between w-full text-gray-800 hover:bg-gray-100 px-3 py-2 rounded-md"
-                        >
-                            Company <IoMdArrowDropdown className='text-2xl' />
-                        </button>
-                        {activeItem === 'company' && (
-                            <div className="pl-6">
-                                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                                    About Us
-                                </a>
-                                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                                    Team
-                                </a>
-                                <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                                    Careers
-                                </a>
-                            </div>
-                        )}
-                    </div>
-
-                    <div className="relative">
-                        <button
-                            onClick={() => setActiveItem(activeItem === 'portfolio' ? null : 'portfolio')}
-                            className="flex items-center justify-between w-full text-gray-800 hover:bg-gray-100 px-3 py-2 rounded-md"
-                        >
-                            Portfolio <IoMdArrowDropdown className='text-2xl' />
-                        </button>
-                        {activeItem === 'portfolio' && (
+                        {activeItem === 'Services' && (
                             <div className="pl-6">
                                 <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
                                     Projects
@@ -233,25 +175,14 @@ const Navbar = () => {
                             </div>
                         )}
                     </div>
-
-                    <a href="#" className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md">
-                        Services
-                    </a>
                     <a href="#" className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md">
                         FAQ
                     </a>
                 </div>
-
                 <div className="px-2 pb-3 space-y-1">
-                    <a href="tel:+19387407555" className="block px-4 py-2 text-blue-600 hover:underline">
-                        Call Us ↗
-                    </a>
-                    <span className="block px-4 py-2 text-gray-800">+1-938-740-7555</span>
-                    <a
-                        href="#"
-                        className="block w-full text-center px-4 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition duration-200 ease-in-out"
-                    >
-                        Contact Us
+                    <a href="#" className="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group">
+                        <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+                        <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">Contact Us</span>
                     </a>
                 </div>
             </div>

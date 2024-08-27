@@ -88,7 +88,10 @@ export const Slider = () => {
                         <div key={index} className="w-full flex-shrink-0 p-4 sm:p-6 md:p-8 lg:p-10">
                             <div className="w-full h-full flex justify-center items-center bg-gray-900 text-white rounded-lg p-6 md:px-16">
                                 <div className="text-left">
-                                    <Link to={item.link} className='btn btn-primary text-white mb-2'>Linked in</Link>
+                                    <a to={item.link} class="mb-2 relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                                        <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                                        <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Linked in</span>
+                                    </a>
                                     <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-4">{item.title}</h3>
                                     <p className="text-sm sm:text-base md:text-lg mb-6">{item.description}</p>
                                     <div className="flex items-center">

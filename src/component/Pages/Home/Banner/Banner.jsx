@@ -1,107 +1,39 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
+import email from '../../../../assets/images/email.png';
+import arrow from '../../../../assets/images/arrow.png';
+import banner from '../../../../assets/images/banner.png';
+
 const Banner = () => {
     return (
-        <section className="bg-gray-50 py-12 px-6 md:px-12 lg:px-24 flex flex-col lg:flex-row items-center">
-            {/* Left Text Section */}
-            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="10" className="text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0">
-                <h5 className="text-indigo-600 font-semibold uppercase">Empowerment</h5>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mt-4">
-                    Seamless IT for your business, boosting your growth.
-                </h1>
-                <p className="text-gray-600 mt-4">
-                    We provide the expertise and support to propel your business forward in the digital landscape.
+        <div
+            style={{
+                backgroundImage: `url(${banner})`,
+                backgroundRepeat: 'no-repeat',
+            }}
+            className="text-left space-y-8 py-16 px-6 md:px-16 lg:px-36 bg-[right_bottom] md:bg-[right_center]"
+        >
+            <div>
+                <div className="flex flex-wrap items-center gap-3 md:gap-6 text-[#183282] text-6xl md:text-8xl font-extrabold">
+                    <h2>We develop </h2>
+                    <h3 className="flex items-center gap-3 md:gap-6">
+                        the <img className="mb-[8px] md:mb-[12px] w-[36px] md:w-[90px]" src={email} alt="email icon" /> eye
+                    </h3>
+                </div>
+                <div className="flex flex-wrap items-center gap-3 md:gap-6 text-[#183282] text-6xl md:text-8xl font-extrabold">
+                    <h2 className="flex items-center gap-3 md:gap-5">
+                        <span><img className="mt-[8px] md:mt-[12px] w-[36px] md:w-[90px]" src={arrow} alt="arrow icon" /></span>catching
+                    </h2>
+                    <h3>brands</h3>
+                </div>
+            </div>
+            <div className="w-full">
+                <p className="text-lg md:text-xl w-[327px] md:w-[440px] text-[#183282]  font-normal leading-6 md:leading-8">
+                    Empower your franchisees and locations to grow with our intelligent dashboards and tools.
                 </p>
-                <div className="flex justify-center lg:justify-start mt-8">
-                    <a
-                        href="#"
-                        className="bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold text-sm md:text-base mr-4 hover:bg-blue-700 transition duration-300"
-                    >
-                        Learn More
-                    </a>
-                    <a
-                        href="#"
-                        className="bg-blue-100 text-blue-600 py-3 px-6 rounded-lg font-semibold text-sm md:text-base hover:bg-blue-200 transition duration-300"
-                    >
-                        Let’s Talk
-                    </a>
-                </div>
+                <button className="btn w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 mt-8 md:mt-16">
+                    Contact us
+                </button>
             </div>
-
-            {/* Right Image & Info Section */}
-            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="10" className="lg:w-1/2 flex flex-col items-center lg:items-start">
-                <div className="relative p-6 rounded-lg">
-                    <img
-                        srcSet="
-                            https://images.pexels.com/photos/1049317/pexels-photo-1049317.jpeg?auto=compress&cs=tinysrgb&w=640&dpr=1 640w,
-                            https://images.pexels.com/photos/1049317/pexels-photo-1049317.jpeg?auto=compress&cs=tinysrgb&w=1260&dpr=1 1260w
-                        "
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        src="https://images.pexels.com/photos/1049317/pexels-photo-1049317.jpeg"
-                        alt="IT Professional"
-                        className="rounded-lg w-full object-cover"
-                    />
-                    <div data-aos="zoom-in" data-aos-duration="2200" className="md:absolute md:bottom-[179px] md:w-[280px] bg-white p-10 shadow-lg md:shadow-none rounded-lg flex items-center justify-center gap-4 text-center  mt-4">
-                        <img src="https://wpriverthemes.com/HTML/synck/assets/imgs/icon1.svg" alt="Experience Icon" />
-                        <div className="flex gap-4">
-                            <div className="text-indigo-600 text-3xl font-bold">+8</div>
-                            <div className="text-gray-600 mt-2">Years Experience</div>
-                        </div>
-                    </div>
-
-                    <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div data-aos="zoom-in" data-aos-duration="2500" className="bg-white p-8 rounded-lg shadow-lg flex items-center justify-center text-center">
-                            <div className="flex gap-1 items-center justify-center">
-                                <div className="avatar-group -space-x-6 rtl:space-x-reverse">
-                                    <div className="avatar">
-                                        <div className="w-8">
-                                            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="Team Member 1" />
-                                        </div>
-                                    </div>
-                                    <div className="avatar">
-                                        <div className="w-8">
-                                            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="Team Member 2" />
-                                        </div>
-                                    </div>
-                                    <div className="avatar">
-                                        <div className="w-8">
-                                            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="Team Member 3" />
-                                        </div>
-                                    </div>
-                                    <div className="avatar">
-                                        <div className="w-8">
-                                            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="Team Member 4" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="text-gray-600 font-semibold">
-                                    <span className="text-[#265FDB]">Meet</span> Our Experts
-                                </div>
-                            </div>
-                        </div>
-
-                        <div data-aos="zoom-in" data-aos-duration="3000" className="bg-white p-8 rounded-lg shadow-lg flex items-center justify-center text-center">
-                            <div>
-                                <div className="flex items-center justify-between text-left space-x-8">
-                                    <div>
-                                        <small className="text-xs">Verified by</small>
-                                        <img
-                                            src="https://wpriverthemes.com/HTML/synck/assets/imgs/icon2.svg"
-                                            alt="Google Verification"
-                                        />
-                                    </div>
-                                    <div>
-                                        <div className="text-gray-600">3245 Reviews</div>
-                                        <div className="text-yellow-500 text-lg mt-2">★★★★★</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     );
 };
 

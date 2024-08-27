@@ -12,9 +12,10 @@ const Service = () => {
                             alt="Web Development"
                             className="w-full h-48 object-cover mb-4 rounded-md"
                         />
-                        <button className="bg-blue-200 text-blue-800 py-2 px-4 mt-4 rounded-lg">
-                            Web Development
-                        </button>
+                        <a href="#_" class="mt-4 relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                            <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                            <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Web Development</span>
+                        </a>
                     </div>
                 </div>
                 {/* Mobile Development */}
@@ -25,9 +26,10 @@ const Service = () => {
                             alt="Mobile Development"
                             className="w-full h-48 object-cover mb-4 rounded-md"
                         />
-                        <button className="bg-blue-200 text-blue-800 py-2 px-4 mt-4 rounded-lg">
-                            Mobile Development
-                        </button>
+                        <a href="#_" class="mt-4 relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                            <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                            <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white"> Mobile Development</span>
+                        </a>
                     </div>
                 </div>
                 {/* Development Text */}
@@ -50,12 +52,15 @@ const Service = () => {
                             </svg>
                         </div>
                         <h3 className="text-xl font-semibold mb-2">Development</h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-justify text-sm">
                             Software development is a dynamic and rapidly evolving field that plays a pivotal role in shaping the digital landscape we live in today. It encompasses the processes, methodologies, and practices used to design, create, deploy, and maintain software applications and systems.
                         </p>
-                        <button className="mt-4 bg-blue-600 text-white py-2 px-4 rounded-lg">
-                            Learn More
-                        </button>
+                        <a href="#_" class="relative inline-block mt-4 px-4 py-2 font-medium group">
+                            <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                            <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                            <span class="relative text-black group-hover:text-white">Learn More</span>
+                        </a>
+
                     </div>
                 </div>
             </div>

@@ -4,8 +4,8 @@ import Footer from "../Footer/Footer";
 
 const Main = () => {
     return (
-        <div>
-            <Navbar/>
+        <div className=" bg-[#ECEADD]">
+            <Navbar />
             <div className='min-h-[calc(100vh-436px)]'>
                 <Outlet />
             </div>

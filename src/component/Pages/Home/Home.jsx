@@ -10,7 +10,8 @@ import TimeLine from "./TimeLine/TimeLine";
 const Home = () => {
     return (
         <div className="mt-[4%]">
-            <Banner />
+                <Banner />
+            
             <HowWeDo />
             <CaseStudies />
             <TimeLine />

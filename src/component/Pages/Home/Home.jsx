@@ -1,3 +1,4 @@
+import Faq from "../Faq/Faq";
 import Banner from "./Banner/Banner";
 import CaseStudies from "./CaseStudies/CaseStudies";
 import Contact from "./Contact/Contact";
@@ -19,6 +20,7 @@ const Home = () => {
             <Slider />
             <ProjectShowcase />
             <Contact />
+            <Faq />
         </div>
     );
 };

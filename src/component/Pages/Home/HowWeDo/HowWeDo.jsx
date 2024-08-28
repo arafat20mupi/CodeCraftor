@@ -7,6 +7,7 @@ import book from '../../../../assets/images/book.png';
 import starBg from '../../../../assets/images/star-bg.png';
 import writer from '../../../../assets/images/writer.png';
 import circle from '../../../../assets/images/cercule.png';
+import CountUp from 'react-countup';
 
 const HowWeDo = () => {
     return (
@@ -200,19 +201,19 @@ const HowWeDo = () => {
                 <h2 className='text-4xl md:text-6xl font-semibold md:leading-[68px] w-full md:w-[40%] text-center my-20'>Strategic design over the years</h2>
                 <div className='text-[#183282] grid grid-cols-1 md:grid-cols-4 gap-9'>
                     <div className='bg-white py-8 px-12 w-[272px] h-[208px] rounded-xl space-y-3'>
-                        <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'>400</h2>
+                        <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'><CountUp enableScrollSpy  end={400} /></h2>
                         <p className='text-xs'>Talented people ready to being your vision</p>
                     </div>
                     <div className='bg-white py-8 px-12 w-[272px] h-[208px] rounded-xl space-y-3'>
-                        <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'>15</h2>
+                        <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'><CountUp enableScrollSpy  end={15} /></h2>
                         <p className='text-xs'>Years of experience working with tech</p>
                     </div>
                     <div className='bg-white py-8 px-12 w-[272px] h-[208px] rounded-xl space-y-3'>
-                        <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'>40</h2>
+                        <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'><CountUp enableScrollSpy  end={40} /></h2>
                         <p className='text-xs'>Offices in the United States</p>
                     </div>
                     <div className='bg-white py-8 px-12 w-[272px] h-[208px] rounded-xl space-y-3'>
-                        <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'>3K+</h2>
+                        <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'><CountUp enableScrollSpy  end={3} />K+</h2>
                         <p className='text-xs'>Pixel perfect projects designed</p>
                     </div>
                 </div>

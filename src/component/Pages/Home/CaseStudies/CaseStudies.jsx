@@ -5,7 +5,7 @@ import Service from '../Service/Service';
 
 const CaseStudies = () => {
     return (
-        <div data-aos="fade-up" data-aos-duration="1000" className='bg-[#F3F6FD]'>
+        <div data-aos="fade-up" data-aos-duration="1000" className='bg-[#F3F6FD] '>
             <div className="max-w-[982px] mx-auto py-12 md:py-24 px-4">
                 <div className='text-center mb-8 md:mb-10'>
                     <h5 className="text-[10px] mb-3 tracking-[5px] font-medium">CASE STUDIES</h5>

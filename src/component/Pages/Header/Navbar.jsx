@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io';
-import logo from '../../../assets/images/logo.jpg';
+import logo from '../../../assets/images/logo.png';
 
 const Navbar = () => {
     const [activeItem, setActiveItem] = useState(null);

@@ -3,7 +3,7 @@ import React from 'react';
 const Service = () => {
     return (
         <div className="container mx-auto px-4 py-8">
-            <div className="md:flex gap-10">
+            <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="500" className="md:flex gap-10">
                 <div className='md:flex space-y-4 w-full md:w-[60%] bg-white p-4 gap-5'>
                     {/* Web Development */}
                     <div className="bg-white space-y-5 md:w-[800px] hover:shadow-2xl transition-shadow  rounded-lg shadow-md">

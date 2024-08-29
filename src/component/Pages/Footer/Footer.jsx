@@ -3,7 +3,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
         <footer className=" text-gray-400 bg-gradient-to-r from-[#182E76] to-[#37233B] body-font">
-            <div className='w-[90%] mx-auto'>
+            <div data-aos="fade-up" data-aos-duration="2000" className='w-[90%] mx-auto'>
                 <div className=' py-4 px-5 flex flex-wrap flex-col sm:flex-row'>
                     <div className="container w-[90%] mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-gray-400 text-sm text-center sm:text-left"><img src={logo} className='w-28' alt="" />

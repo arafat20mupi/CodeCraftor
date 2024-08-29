@@ -2,6 +2,7 @@ import React from 'react';
 import { BiSupport } from 'react-icons/bi';
 import { BsMap } from 'react-icons/bs';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import CountUp from 'react-countup';
 
 const Contact = () => {
     return (
@@ -45,27 +46,27 @@ const Contact = () => {
                     <div className="space-y-6 mt-14">
                         {/* Info Items */}
                         <div>
-                            <h3 className="text-3xl font-medium">22+ <span className="text-lg">Years</span></h3>
+                            <h3 className="text-3xl font-medium"><CountUp enableScrollSpy end={22} />+ <span className="text-lg">Years</span></h3>
                             <p className="text-gray-500">Field Experience</p>
                             <hr className='border-1 mt-10 border-blue-900' />
                         </div>
                         <div>
-                            <h3 className="text-3xl font-medium">950+</h3>
+                            <h3 className="text-3xl font-medium"><CountUp enableScrollSpy end={950} />+</h3>
                             <p className="text-gray-500">Projects Done Around World</p>
                             <hr className='border-1 mt-10 border-blue-900' />
                         </div>
                         <div>
-                            <h3 className="text-3xl font-medium">99%</h3>
+                            <h3 className="text-3xl font-medium"><CountUp enableScrollSpy end={99} />%</h3>
                             <p className="text-gray-500">Client Satisfaction</p>
                             <hr className='border-1 mt-10 border-blue-900' />
                         </div>
                         <div>
-                            <h3 className="text-3xl font-medium">1995+</h3>
+                            <h3 className="text-3xl font-medium"><CountUp enableScrollSpy end={1995} />+</h3>
                             <p className="text-gray-500">Year Established On</p>
                             <hr className='border-1 mt-10 border-blue-900' />
                         </div>
                         <div>
-                            <h3 className="text-3xl font-medium">2</h3>
+                            <h3 className="text-3xl font-medium"><CountUp enableScrollSpy end={2} /></h3>
                             <p className="text-gray-500">Mins Response Time</p>
                         </div>
                     </div>

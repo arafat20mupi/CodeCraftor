@@ -42,7 +42,7 @@ const Navbar = () => {
                             alt="Synck Logo"
                             className="h-10 w-auto rounded-full"
                         />
-                        <span className="ml-2 text-xl font-semibold">SYNCK</span>
+                        <span className="md:ml-2 text-sm md:text-xl font-semibold">The Proper Partner</span>
                     </div>
 
                     {/* Responsive Menu Button */}

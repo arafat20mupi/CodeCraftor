@@ -13,7 +13,7 @@ const Minds = () => {
                     </div>
 
                     <div className="md:flex items-center justify-around md:gap-10 space-y-8 p-3">
-                        <div data-aos="fade-right" data-aos-duration="1000">
+                        <div data-aos="zoom-in-up" data-aos-duration="1000">
                             <img className="rounded-2xl" src={firstImg} alt="" />
                             <div>
                                 <h2 className="text-2xl my-4 text-[#183282] font-semibold">
@@ -26,7 +26,7 @@ const Minds = () => {
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-left" data-aos-duration="1500">
+                        <div data-aos="zoom-in-down" data-aos-duration="1500">
                             <img className="rounded-2xl" src={secundImg} alt="" />
                             <div>
                                 <h2 className="text-2xl tracking-tighter my-4 text-[#183282] font-semibold">
@@ -42,7 +42,7 @@ const Minds = () => {
                     </div>
 
                     <div className="md:flex items-center justify-around md:gap-10 space-y-8 md:space-y-0 p-3 md:mt-20">
-                        <div data-aos="fade-right" data-aos-duration="2000">
+                        <div data-aos="zoom-in-down" data-aos-duration="2000">
                             <img className="rounded-2xl" src={theadImg} alt="" />
                             <div>
                                 <h2 className="text-2xl my-4 text-[#183282] font-semibold">
@@ -55,7 +55,7 @@ const Minds = () => {
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-left" data-aos-duration="2500">
+                        <div data-aos="zoom-in-up" data-aos-duration="2500">
                             <img className={"rounded-2xl"} src={fourImg} alt="" />
                             <div>
                                 <h2 className="text-2xl tracking-tighter my-4 text-[#183282] font-semibold">

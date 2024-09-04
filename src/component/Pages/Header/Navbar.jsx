@@ -40,7 +40,7 @@ const Navbar = () => {
                         <img
                             src={logo}
                             alt="Synck Logo"
-                            className="h-10 w-auto rounded-full"
+                            className="h-14 w-auto rounded-full"
                         />
                         <span className="md:ml-2 text-sm md:text-xl font-semibold">The Proper Partner</span>
                     </div>

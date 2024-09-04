@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaUnity } from 'react-icons/fa';
 
 const Service = () => {
     return (
@@ -36,20 +37,7 @@ const Service = () => {
                 <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1200" className="flex flex-col md:w-[40%] bg-white p-4 rounded-lg justify-center items-center text-justify hover:shadow-2xl transition-shadow">
                     <div>
                         <div className="text-blue-600 mb-4">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                strokeWidth={2}
-                                stroke="currentColor"
-                                className="w-8 h-8 mx-auto"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M14.828 14.828a4 4 0 01-5.656 0M15 10a2 2 0 012 2m2 0a4 4 0 00-4 4m0-4a4 4 0 00-4-4m4 4H9.343m4.314-4H9.343m2-2a4 4 0 015.656 0M10 10a2 2 0 10-2 2m-2 0a4 4 0 014 4m0-4H7.343m4.314-4H7.343m2-2a4 4 0 00-5.656 0"
-                                />
-                            </svg>
+                            <FaUnity className="w-8 h-8 mx-auto" />
                         </div>
                         <h3 className="text-xl font-semibold mb-2">Development</h3>
                         <p className="text-gray-600 text-justify text-sm">

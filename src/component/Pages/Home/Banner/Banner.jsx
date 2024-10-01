@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 
-const Banner = () => {
+const Banner = ()  => {
     return (
         <div
             style={{

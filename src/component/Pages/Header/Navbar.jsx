@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io';
-import logo from '../../../assets/images/logo.png';
-
+import CodeCraftor from '../../../assets/images/CodeCraftor.jpg'
 const Navbar = () => {
     const [activeItem, setActiveItem] = useState(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,11 +37,11 @@ const Navbar = () => {
                     {/* Logo Section */}
                     <div className="flex items-center">
                         <img
-                            src={logo}
-                            alt="Synck Logo"
+                            src={CodeCraftor}
+                            alt="CodeCraftor Logo"
                             className="h-14 w-auto rounded-full"
                         />
-                        <span className="md:ml-2 text-sm md:text-xl font-semibold">The Proper Partner</span>
+                        <span className="md:ml-2 text-sm md:text-xl font-semibold">CodeCraftor</span>
                     </div>
 
                     {/* Responsive Menu Button */}

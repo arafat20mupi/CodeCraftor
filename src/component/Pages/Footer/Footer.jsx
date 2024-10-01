@@ -1,3 +1,5 @@
+import CodeCraftor from '../../../assets/images/CodeCraftor.jpg'
+
 import logo from '../../../assets/images/logo.png';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -6,12 +8,12 @@ const Footer = () => {
             <div data-aos="fade-up" data-aos-duration="2000" className='w-[90%] mx-auto'>
                 <div className=' py-4 px-5 flex flex-wrap flex-col sm:flex-row'>
                     <div className="container w-[90%] mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <p className="text-gray-400 text-sm text-center sm:text-left"><img src={logo} className='w-28' alt="" />
+                        <p className="text-gray-400 text-sm text-center sm:text-left"><img src={CodeCraftor} className='w-28 rounded-full' alt="" />
                         </p>
                         <span className="md:flex space-y-5 items-center gap-5 md:ml-auto mt-2 justify-center">
                             <a className='md:mt-4' href="">Send us email at</a>
                             <button className="btn w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 ">
-                                Cnevaeh@example.com
+                                codecraftor.web@gmail.com
                             </button>
                         </span>
                     </div>

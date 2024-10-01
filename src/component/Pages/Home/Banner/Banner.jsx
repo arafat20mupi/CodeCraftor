@@ -12,6 +12,7 @@ const Banner = ()  => {
                 backgroundImage: `url(${banner})`,
                 backgroundRepeat: 'no-repeat',
             }}
+            
             className="text-left space-y-8 py-16 px-6 md:px-16 lg:px-36 bg-[right_bottom] md:bg-[right_center]"
         >
             <div>

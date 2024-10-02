@@ -16,7 +16,7 @@ const Banner = ()  => {
         >
             <div>
                 <div data-aos="fade-right" data-aos-duration="1000" className="flex flex-wrap items-center gap-3 md:gap-6 text-[#183282] text-6xl md:text-8xl font-extrabold">
-                    <h2>We develop </h2>
+                    <h2>We <span className='bg-gdt'>develop</span> </h2>
                     <h3 className="flex items-center gap-3 md:gap-6">
                         the <img className="mb-[8px] md:mb-[12px] w-[36px] md:w-[90px]" src={email} alt="email icon" /> eye
                     </h3>

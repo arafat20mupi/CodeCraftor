@@ -12,7 +12,8 @@ const Footer = () => {
                         </p>
                         <span className="md:flex space-y-5 items-center gap-5 md:ml-auto mt-2 justify-center">
                             <a className='md:mt-4' href="">Send us email at</a>
-                            <button className="btn w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 ">
+                            <button className="btn w-full md:w-[unset] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 md:px-10">
+                                {/* button width problem solve -Nirob */}
                                 codecraftor.web@gmail.com
                             </button>
                         </span>

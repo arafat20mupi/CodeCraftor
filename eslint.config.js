@@ -18,7 +18,7 @@ export default [
         node: true,
       },
 
-      
+
     },
     settings: { react: { version: '18.3' } },
     plugins: {
@@ -26,6 +26,8 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
+
+    
     rules: {
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,

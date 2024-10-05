@@ -40,9 +40,9 @@ const Navbar = () => {
             <img
               src={CodeCraftor}
               alt="CodeCraftor Logo"
-              className="h-14 w-auto rounded-full"
+              className="h-16 w-auto"
             />
-            <span className="md:ml-2 text-sm md:text-xl font-semibold">
+            <span className="md:ml-2 text-sm md:text-xl font-semibold bg-gdt">
               CodeCraftor
             </span>
           </div>

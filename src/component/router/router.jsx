@@ -3,6 +3,7 @@ import Main from "../Pages/Main/Main";
 import Home from "../Pages/Home/Home";
 import Error from "../Pages/Error/Error";
 import Team from "../Pages/Team/Team";
+import Career from "../Pages/Career/Career";
 import Portfolio from "../Pages/Portfolio/Portfolio";
 
 export const router = createBrowserRouter([
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "/our-team",
         element: <Team />,
+      },
+      {
+        path: "/career",
+        element: <Career />,
       },
     ],
   },

@@ -1,16 +1,24 @@
+import { TbMathGreater } from 'react-icons/tb';
 import faq from '../../../assets/images/faq.png'
 const Faq = () => {
     return (
-        <div style={{borderRadius: '100px 100px 0px 0px'}} className='bg-gradient-to-r from-[#182E76] to-[#37233B]'>
-            <div className="  container  mx-auto md:p-8 p-4  text-white">
-                <div className="flex flex-col justify-center items-center text-center">
-                    <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" className="text-3xl md:text-[58px] font-semibold leading-[68px] w-full md:w-[676px]">Have an Idea? Let's Build and Scale It!</h1>
-                    <button data-aos="flip-up" data-aos-delay="50" data-aos-duration="500" className="btn my-8 md:my-28 w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 ">
-                        Book a demo
-                    </button>
+        <div className='bg-gradient-to-r '>
+            <div className="overflow-x-hidden py-16 px-6 md:px-16 lg:px-36 bg-[right_bottom] md:bg-[right_center]">
+                <h1
+                    className="text-5xl text-center font-bold text-gray-800 my-8"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                >
+                    Frequently Asked
+                    Questions
+                </h1>
+                <div className=" py-2 px-4 ring-1 bg-white w-[max-content] rounded-xl justify-center flex items-center mx-auto">
+                    <h1 className="text-black justify-center flex items-center">
+                        <span className="text-[#afafaf]">CodeCraftor</span>{" "}
+                        <TbMathGreater className="mx-2" /> FAQ
+                    </h1>
                 </div>
-
-                <div className="w-[90%] mx-auto">
+                <div className="w-[90%] mx-auto mt-4">
                     <div className=" md:flex  gap-28 justify-center ">
                         <div data-aos="zoom-in-up" data-aos-duration="1000">
                             <div data-aos="fade-right" data-aos-duration="1200"><h2 className="text-5xl md:text-6xl text-start font-semibold">Frequently Asked <br /> Questions</h2></div>

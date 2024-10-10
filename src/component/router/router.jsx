@@ -5,6 +5,9 @@ import Error from "../Pages/Error/Error";
 import Team from "../Pages/Team/Team";
 import Career from "../Pages/Career/Career";
 import Portfolio from "../Pages/Portfolio/Portfolio";
+import CaseStudies from "../Pages/Home/CaseStudies/CaseStudies";
+import ProjectShowcase from "../Pages/Home/ProjectShowcase/ProjectShowcase";
+import Faq from "../Pages/Faq/Faq";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +31,22 @@ export const router = createBrowserRouter([
         path: "/career",
         element: <Career />,
       },
+      {
+        path: '/faq',
+        element: <Faq></Faq>,
+      },
+      {
+        path: '/CaseStudies',
+        element: <CaseStudies></CaseStudies>
+      },
+      {
+        path: "/Project",
+        element: <ProjectShowcase/>,
+      },
+      {
+        path: '/faq',
+        element: <Faq></Faq>
+      }
     ],
   },
 ]);

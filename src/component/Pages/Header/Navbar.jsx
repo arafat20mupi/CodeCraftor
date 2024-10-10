@@ -61,7 +61,7 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
               >
                 <path
-                  className={isMenuOpen ? "hidden" : "block"}
+                  className={ isMenuOpen ? "hidden" : "block"}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
@@ -86,12 +86,12 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <a
-              href="#"
+            <Link
+              to={''}
               className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
             >
               Company
-            </a>
+            </Link>
             <Link
               to="/portfolio"
               className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
@@ -109,24 +109,30 @@ const Navbar = () => {
               </button>
               {activeItem === "Services" && (
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md">
-                  <a
-                    href="#"
+                  <Link
+                    to={'/Project'}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Projects
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                  to={'/CaseStudies'}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Case Studies
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to={''}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Testimonials
-                  </a>
+                  </Link>
+                  <Link
+                    to={'/career'}
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                  >
+                    Career
+                  </Link>
                 </div>
               )}
             </div>
@@ -136,12 +142,12 @@ const Navbar = () => {
             >
               Our Team
             </Link>
-            <a
-              href="#"
+            <Link
+              to="/faq"
               className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
             >
               FAQ
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Contact Section */}
@@ -189,18 +195,18 @@ const Navbar = () => {
           >
             Home
           </Link>
-          <a
-            href="#"
+          <Link
+            to={''}
             className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md"
           >
             Company
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to={''}
             className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md"
           >
             Portfolio
-          </a>
+          </Link>
           <div className="relative">
             <button
               onClick={() =>
@@ -212,24 +218,30 @@ const Navbar = () => {
             </button>
             {activeItem === "Services" && (
               <div className="pl-6">
-                <a
-                  href="#"
+                <Link
+                  to={'/Project'}
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
                   Projects
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to={'/CaseStudies'}
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
                   Case Studies
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to={''}
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
                   Testimonials
-                </a>
+                </Link>
+                <Link
+                  to={'/career'}
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                Career
+                </Link>
               </div>
             )}
           </div>
@@ -239,23 +251,23 @@ const Navbar = () => {
           >
             Our Team
           </Link>
-          <a
-            href="#"
+          <Link
+            to="/faq"
             className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md"
           >
             FAQ
-          </a>
+          </Link>
         </div>
         <div className="px-2 pb-3 space-y-1">
-          <a
-            href="#"
-            className="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
+          <Link
+            to={'/'}
+            className="relative inline-flex items-center justify-start  px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
           >
             <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
             <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-blue-600">
               Contact Us
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

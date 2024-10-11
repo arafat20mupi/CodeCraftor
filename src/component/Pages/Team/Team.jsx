@@ -4,9 +4,10 @@ import Teamgoals from "../../../assets/images/team/teamgoals.svg";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import Rafel from "../../../assets/images/team/Rafel.jpg";
 import Arafat from "../../../assets/images/team/Arafat.jpg";
-import Nirob from "../../../assets/images/team/Arafat.jpg";
+import Nirob from "../../../assets/images/team/Nirob.jpeg";
 import Nazmin from "../../../assets/images/team/Nazmin.png";
-
+import Alpona from '../../../assets/images/team/Alpona.jpeg'
+import ShahNawaz from '../../../assets/images/team/ShahNawaz.jpeg'
 const Team = () => {
   const Members = [
     {
@@ -30,17 +31,34 @@ const Team = () => {
       designation: "Frontend Developer & Merketer",
       image: Nirob,
       FBLink: 'https://www.facebook.com/dev.abdullahalnirob',
-      linkedInLink: 'https://abdullahalnirob.vercel.app/',
+      linkedInLink: 'https://www.linkedin.com/in/abdullah-al-nirob-096994295',
       githubLink: 'https://github.com/abdullahalnirob'
     },
     {
       name: 'Nazmin Akter Noor',
       designation: "Frontend Developer & Merketer",
       FBLink: 'https://www.facebook.com/nazmin.noor13',
-      linkedInLink: 'https://www.facebook.com/nazmin.noor13',
+      linkedInLink: 'https://www.linkedin.com/in/nazmin-akter-noor',
       githubLink: 'https://github.com/NazminNoor',
       image: Nazmin
-    }
+    },
+    {
+      name: 'Afiya Akter Alpona ',
+      designation: "Digital Merketer",
+      FBLink: 'https://www.facebook.com/profile.php?id=100064763745732',
+      linkedInLink: 'https://www.linkedin.com',
+      githubLink: 'https://github.com',
+      image: Alpona
+    },
+    {
+      name: 'Shah Nawaz',
+      designation: "Frontend Developer",
+      image: ShahNawaz,
+      FBLink: 'https://www.facebook.com/snh.sabbir',
+      linkedInLink: 'https://www.linkedin.com/in/shah-nawaz-haque',
+      githubLink: 'https://github.com/snh-sabbir'
+    },
+
   ];
 
 
@@ -56,7 +74,7 @@ const Team = () => {
         </h1>
         <div className="bg-slate-100 py-2 px-4 ring-1 ring-gray-300 w-[max-content] rounded-xl justify-center flex items-center mx-auto">
           <h1 className="text-black justify-center flex items-center">
-            <span className="text-[#afafaf]">CodeCraftor</span>{" "}
+            <span className="text-[#afafaf]">CodeCraftor</span>{ " "}
             <TbMathGreater className="mx-2" /> Our Team Members
           </h1>
         </div>

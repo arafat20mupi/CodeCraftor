@@ -8,6 +8,7 @@ import Portfolio from "../Pages/Portfolio/Portfolio";
 import CaseStudies from "../Pages/Home/CaseStudies/CaseStudies";
 import ProjectShowcase from "../Pages/Home/ProjectShowcase/ProjectShowcase";
 import Faq from "../Pages/Faq/Faq";
+import Company from "../Pages/Company/Company";
 
 export const router = createBrowserRouter([
   {
@@ -46,6 +47,13 @@ export const router = createBrowserRouter([
       {
         path: '/faq',
         element: <Faq></Faq>
+      },
+      {
+        path: '/company',
+        element: <Company></Company>
+      },
+      {
+        path: '/contact',
       }
     ],
   },

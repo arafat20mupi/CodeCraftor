@@ -87,7 +87,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to={''}
+              to={'/company'}
               className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
             >
               Company

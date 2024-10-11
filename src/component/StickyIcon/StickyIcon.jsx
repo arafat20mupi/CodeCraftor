@@ -15,7 +15,7 @@ const StickyIcon = () => {
                 {isHovered ? (
                     <>
                         <a
-                            href="https://wa.me/your-number"
+                            href="https://wa.me/+8801722172906"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mx-2 p-4 h-12 w-12 flex items-center justify-center bg-green-600 rounded-full hover:bg-green-800 transition-colors duration-300"
@@ -23,7 +23,7 @@ const StickyIcon = () => {
                             <i className="fab fa-whatsapp text-2xl hover:text-white"></i>
                         </a>
                         <a
-                            href="https://www.facebook.com/your-profile"
+                            href="https://www.facebook.com/profile.php?id=61564677705735"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mx-2 p-4 h-12 w-12 flex items-center justify-center bg-blue-600 rounded-full hover:bg-blue-800 transition-colors duration-300"
@@ -32,8 +32,8 @@ const StickyIcon = () => {
                         </a>
                     </>
                 ) : (
-                    <i className="fas fa-envelope text-2xl"></i>
-                )}
+                    <i class="fa-sharp-duotone text-2xl fa-solid fa-phone"></i>
+                    )}
             </div>
         </div>
     );

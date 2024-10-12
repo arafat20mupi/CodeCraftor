@@ -9,6 +9,7 @@ import CaseStudies from "../Pages/Home/CaseStudies/CaseStudies";
 import ProjectShowcase from "../Pages/Home/ProjectShowcase/ProjectShowcase";
 import Faq from "../Pages/Faq/Faq";
 import Company from "../Pages/Company/Company";
+import Apply from "../Pages/Apply/Apply";
 
 export const router = createBrowserRouter([
   {
@@ -33,28 +34,32 @@ export const router = createBrowserRouter([
         element: <Career />,
       },
       {
-        path: '/faq',
+        path: "/faq",
         element: <Faq></Faq>,
       },
       {
-        path: '/CaseStudies',
-        element: <CaseStudies></CaseStudies>
+        path: "/CaseStudies",
+        element: <CaseStudies></CaseStudies>,
       },
       {
         path: "/Project",
-        element: <ProjectShowcase/>,
+        element: <ProjectShowcase />,
       },
       {
-        path: '/faq',
-        element: <Faq></Faq>
+        path: "/faq",
+        element: <Faq></Faq>,
       },
       {
-        path: '/company',
-        element: <Company></Company>
+        path: "/company",
+        element: <Company></Company>,
       },
       {
-        path: '/contact',
-      }
+        path: "/apply",
+        element: <Apply />,
+      },
+      {
+        path: "/contact",
+      },
     ],
   },
 ]);

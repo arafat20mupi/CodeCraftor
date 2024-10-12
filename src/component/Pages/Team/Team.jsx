@@ -4,7 +4,7 @@ import Teamgoals from "../../../assets/images/team/teamgoals.svg";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import Rafel from "../../../assets/images/team/Rafel.jpg";
 import Arafat from "../../../assets/images/team/Arafat.jpg";
-import Nirob from "../../../assets/images/team/Nirob.jpeg";
+import Nirob from "../../../assets/images/team/Nirob.png";
 import Nazmin from "../../../assets/images/team/Nazmin.png";
 import Alpona from '../../../assets/images/team/Alpona.jpeg'
 import ShahNawaz from '../../../assets/images/team/ShahNawaz.jpeg'

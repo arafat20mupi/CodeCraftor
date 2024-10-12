@@ -61,7 +61,7 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
               >
                 <path
-                  className={ isMenuOpen ? "hidden" : "block"}
+                  className={isMenuOpen ? "hidden" : "block"}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
@@ -86,12 +86,7 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <Link
-              to={'/company'}
-              className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
-            >
-              Company
-            </Link>
+
             <Link
               to="/portfolio"
               className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
@@ -116,7 +111,7 @@ const Navbar = () => {
                     Projects
                   </Link>
                   <Link
-                  to={'/CaseStudies'}
+                    to={'/CaseStudies'}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Case Studies
@@ -143,6 +138,12 @@ const Navbar = () => {
               Our Team
             </Link>
             <Link
+              to={'/company'}
+              className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
+            >
+              Policy
+            </Link>
+            <Link
               to="/faq"
               className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
             >
@@ -162,9 +163,8 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         ref={menuRef}
-        className={`fixed inset-0 bg-white shadow-md transform ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out z-40`}
+        className={`fixed inset-0 bg-white shadow-md transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out z-40`}
       >
         <div className="flex justify-between items-center px-4 py-3">
           <span className="text-lg font-semibold">Menu</span>
@@ -199,7 +199,7 @@ const Navbar = () => {
             to={''}
             className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md"
           >
-            Company
+            Policy
           </Link>
           <Link
             to={''}
@@ -240,7 +240,7 @@ const Navbar = () => {
                   to={'/career'}
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
-                Career
+                  Career
                 </Link>
               </div>
             )}

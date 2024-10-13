@@ -8,6 +8,8 @@ import Nirob from "../../../assets/images/team/Nirob.png";
 import Nazmin from "../../../assets/images/team/Nazmin.png";
 import Alpona from '../../../assets/images/team/Alpona.jpeg'
 import ShahNawaz from '../../../assets/images/team/ShahNawaz.jpeg'
+import Tanjim from '../../../assets/images/team/Tanjim.png'
+import Hazrat from '../../../assets/images/team/Hojrat.jpg'
 const Team = () => {
   const Members = [
     {
@@ -28,7 +30,7 @@ const Team = () => {
     },
     {
       name: 'Abdullah Al Nirob',
-      designation: "Frontend Developer & Merketer",
+      designation: "Web Developer & Merketer",
       image: Nirob,
       FBLink: 'https://www.facebook.com/dev.abdullahalnirob',
       linkedInLink: 'https://www.linkedin.com/in/abdullah-al-nirob-096994295',
@@ -36,7 +38,7 @@ const Team = () => {
     },
     {
       name: 'Nazmin Akter Noor',
-      designation: "Frontend Developer & Merketer",
+      designation: "Web Developer & Merketer",
       FBLink: 'https://www.facebook.com/nazmin.noor13',
       linkedInLink: 'https://www.linkedin.com/in/nazmin-akter-noor',
       githubLink: 'https://github.com/NazminNoor',
@@ -52,11 +54,27 @@ const Team = () => {
     },
     {
       name: 'Shah Nawaz',
-      designation: "Frontend Developer",
+      designation: "Web Developer",
       image: ShahNawaz,
       FBLink: 'https://www.facebook.com/snh.sabbir',
       linkedInLink: 'https://www.linkedin.com/in/shah-nawaz-haque',
       githubLink: 'https://github.com/snh-sabbir'
+    },
+    {
+      name: 'Tanjim Ahemed Chowdhury',
+      designation: "Web Developer",
+      image: Tanjim,
+      FBLink: 'https://www.facebook.com/tanjim.ahmedchowdhury.12',
+      linkedInLink: 'https://www.linkedin.com/in/tanjim-ahemed-chowdhury-436b1932b/',
+      githubLink: 'https://github.com/tanjimN4'
+    },
+    {
+      name: 'Md Hazrat Ali',
+      designation: "Web Developer",
+      image: Hazrat,
+      FBLink: 'https://www.facebook.com/mdhazratali.hazrat.000000',
+      linkedInLink: 'https://www.linkedin.com/in',
+      githubLink: 'https://github.com/Md-Hazrat'
     },
 
   ];

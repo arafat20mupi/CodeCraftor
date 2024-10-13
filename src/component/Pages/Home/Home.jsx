@@ -16,10 +16,9 @@ const Home = () => {
             <HowWeDo />
             <Minds />
             <CaseStudies />
+            <Contact />
             <TimeLine />
             <Slider />
-            <ProjectShowcase />
-            <Contact />
             <Faq />
         </div>
     );

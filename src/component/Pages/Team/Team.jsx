@@ -10,6 +10,7 @@ import Alpona from '../../../assets/images/team/Alpona.jpeg'
 import ShahNawaz from '../../../assets/images/team/ShahNawaz.jpeg'
 import Tanjim from '../../../assets/images/team/Tanjim.png'
 import Hazrat from '../../../assets/images/team/Hojrat.jpg'
+
 const Team = () => {
   const Members = [
     {
@@ -17,7 +18,7 @@ const Team = () => {
       designation: "CEO & Web Developer",
       image: Arafat,
       FBLink: 'https://www.facebook.com/arafatislamsani169',
-      linkedInLink: 'www.linkedin.com/in/arafatislam03',
+      linkedInLink: 'https://www.linkedin.com/in/arafatislam03',
       githubLink: 'https://github.com/arafat20mupi'
     },
     {
@@ -30,7 +31,7 @@ const Team = () => {
     },
     {
       name: 'Abdullah Al Nirob',
-      designation: "Web Developer & Merketer",
+      designation: "Web Developer & Marketer",
       image: Nirob,
       FBLink: 'https://www.facebook.com/dev.abdullahalnirob',
       linkedInLink: 'https://www.linkedin.com/in/abdullah-al-nirob-096994295',
@@ -38,19 +39,19 @@ const Team = () => {
     },
     {
       name: 'Nazmin Akter Noor',
-      designation: "Web Developer & Merketer",
+      designation: "Web Developer & Marketer",
+      image: Nazmin,
       FBLink: 'https://www.facebook.com/nazmin.noor13',
       linkedInLink: 'https://www.linkedin.com/in/nazmin-akter-noor',
       githubLink: 'https://github.com/NazminNoor',
-      image: Nazmin
     },
     {
-      name: 'Afiya Akter Alpona ',
-      designation: "Digital Merketer",
+      name: 'Afiya Akter Alpona',
+      designation: "Digital Marketer",
+      image: Alpona,
       FBLink: 'https://www.facebook.com/profile.php?id=100064763745732',
       linkedInLink: 'https://www.linkedin.com',
       githubLink: 'https://github.com',
-      image: Alpona
     },
     {
       name: 'Shah Nawaz',
@@ -76,9 +77,7 @@ const Team = () => {
       linkedInLink: 'https://www.linkedin.com/in',
       githubLink: 'https://github.com/Md-Hazrat'
     },
-
   ];
-
 
   return (
     <div className="overflow-x-hidden py-16 px-6 md:px-16 lg:px-36 bg-[right_bottom] md:bg-[right_center]">
@@ -102,7 +101,7 @@ const Team = () => {
             data-aos-duration="1000"
             src={Teamgoals}
             className="w-[60%] md:w-[40%]"
-            alt="Team goals"
+            alt="Team goals representation"
           />
           <p
             data-aos="fade-left"
@@ -133,47 +132,29 @@ const Team = () => {
               </p>
             </div>
             <div className="grid w-full grid-cols-1 gap-x-10 gap-y-20 sm:grid-cols-2 lg:grid-cols-3">
-              {Members.map((member, index) => (
-                <div key={index} className="space-y-4 shadow-md p-4 rounded-md" >
+              {Members.map((member) => (
+                <div key={member.name} className="space-y-4 shadow-md p-4 rounded-md">
                   <img
                     alt={member.name}
                     className="object-cover ring-1 ring-[#ccc] h-72 w-64 mx-auto mb-4 bg-center rounded-sm"
-                    src={member.image || "default-image-url"}
+                    src={member.image}
                   />
                   <div className="flex flex-col items-center">
                     <h4 className="text-xl font-semibold">{member.name}</h4>
                     <p className="text-sm dark:text-gray-600">
                       {member.designation}
                     </p>
-                    <div className="flex mt-2 space-x-5">
-                      <a
-                        rel="noopener noreferrer"
-                        href={member.FBLink}
-                        title="Facebook"
-                        className="dark:text-gray-600"
-                        target="_blank"
-                      >
-                        <FaFacebook />
-                      </a>
-                      <a
-                        rel="noopener noreferrer"
-                        href={member.linkedInLink}
-                        title="LinkedIn"
-                        className="dark:text-gray-600"
-                        target="_blank"
-                      >
-                        <FaLinkedin />
-                      </a>
-                      <a
-                        rel="noopener noreferrer"
-                        href={member.githubLink}
-                        title="GitHub"
-                        className="dark:text-gray-600"
-                        target="_blank"
-                      >
-                        <FaGithub />
-                      </a>
-                    </div>
+                  </div>
+                  <div className="flex justify-center space-x-4 text-gray-700">
+                    <a href={member.FBLink} target="_blank" rel="noopener noreferrer">
+                      <FaFacebook className="w-5 h-5" />
+                    </a>
+                    <a href={member.linkedInLink} target="_blank" rel="noopener noreferrer">
+                      <FaLinkedin className="w-5 h-5" />
+                    </a>
+                    <a href={member.githubLink} target="_blank" rel="noopener noreferrer">
+                      <FaGithub className="w-5 h-5" />
+                    </a>
                   </div>
                 </div>
               ))}

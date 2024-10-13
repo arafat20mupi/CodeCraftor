@@ -66,7 +66,7 @@ const CaseStudies = () => {
     
 
     return (
-        <div  data-aos="fade-up" data-aos-duration="1000" className='space-y-8 py-8 px-6 md:px-16 lg:px-36  bg-[#F3F6FD]'>
+        <div  data-aos="fade-up" data-aos-duration="1000" className='space-y-8 py-8 px-6 md:px-16 lg:px-36  bg-blue-50'>
             <div className="w-full mx-auto py-12 px-4">
                 <div className='text-center mb-8 md:mb-10'>
                     <h5 className="text-[10px] mb-3 tracking-[5px] font-medium">CASE STUDIES</h5>
@@ -75,7 +75,7 @@ const CaseStudies = () => {
                     </h1>
                 </div>
                 <Tabs className=" mx-auto">
-                    <TabList className="flex flex-wrap justify-center space-x-2 md:space-x-4 bg-white rounded-2xl py-2 px-4 md:py-4 md:px-8">
+                    <TabList className="flex flex-wrap justify-center space-x-2 md:space-x-4 bg-blue-50 rounded-2xl py-2 px-4 md:py-4 md:px-8">
                         {tabData.map((tab, index) => (
                             <Tab key={index} className="w-full md:w-auto text-center flex items-center justify-center cursor-pointer text-gray-600 rounded-lg py-2 md:py-3 px-2 md:px-4" selectedClassName="bg-black text-white">
                                 {tab.title}

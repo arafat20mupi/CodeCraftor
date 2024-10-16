@@ -10,6 +10,7 @@ import ProjectShowcase from "../Pages/Home/ProjectShowcase/ProjectShowcase";
 import Faq from "../Pages/Faq/Faq";
 import Company from "../Pages/Company/Company";
 import Apply from "../Pages/Apply/Apply";
+import Contact from "../Pages/Contact/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -59,6 +60,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/contact",
+        element: <Contact></Contact>
       },
     ],
   },

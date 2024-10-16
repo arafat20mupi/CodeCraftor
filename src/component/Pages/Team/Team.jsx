@@ -1,6 +1,6 @@
 import React from "react";
 import { TbMathGreater } from "react-icons/tb";
-import Teamgoals from "../../../assets/images/team/teamgoals.svg";
+import Teamgoals from "../../../assets/images/team/Teamgoals.png";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import Rafel from "../../../assets/images/team/Rafel.jpg";
 import Arafat from "../../../assets/images/team/Arafat.jpg";

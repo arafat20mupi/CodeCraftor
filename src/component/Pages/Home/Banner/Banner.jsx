@@ -3,6 +3,7 @@ import arrow from '../../../../assets/images/arrow.png';
 import banner from '../../../../assets/images/banner.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 AOS.init();
 
 const Banner = ()  => {
@@ -32,9 +33,9 @@ const Banner = ()  => {
                 <p className="text-lg md:text-xl w-[327px] md:w-[440px] text-[#183282]  font-normal leading-6 md:leading-8">
                     Empower your franchisees and locations to grow with our intelligent dashboards and tools.
                 </p>
-                <button className="btn w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 mt-8 md:mt-16">
+                <Link to={'/contact'} className="btn w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 mt-8 md:mt-16">
                     Contact us
-                </button>
+                </Link>
             </div>
         </div>
     );

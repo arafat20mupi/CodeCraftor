@@ -1,19 +1,97 @@
 import React from "react";
 import { TbMathGreater } from "react-icons/tb";
-import Teamgoals from "../../../assets/images/team/teamgoals.svg";
-import { FaTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import Teamgoals from "../../../assets/images/team/Teamgoals.png";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import Rafel from "../../../assets/images/team/Rafel.jpg";
+import Arafat from "../../../assets/images/team/Arafat.jpg";
+import Nirob from "../../../assets/images/team/Nirob.png";
+import Nazmin from "../../../assets/images/team/Nazmin.png";
+import Alpona from '../../../assets/images/team/Alpona.jpeg'
+import ShahNawaz from '../../../assets/images/team/ShahNawaz.jpeg'
+import Tanjim from '../../../assets/images/team/Tanjim.png'
+import Hazrat from '../../../assets/images/team/Hojrat.jpg'
+
 const Team = () => {
+  const Members = [
+    {
+      name: 'Arafat Islam',
+      designation: "CEO & Web Developer",
+      image: Arafat,
+      FBLink: 'https://www.facebook.com/arafatislamsani169',
+      linkedInLink: 'https://www.linkedin.com/in/arafatislam03',
+      githubLink: 'https://github.com/arafat20mupi'
+    },
+    {
+      name: 'Saiful Islam Rafel',
+      designation: "COO & Web Developer",
+      image: Rafel,
+      FBLink: 'https://www.facebook.com/mdsaifulislamrafel',
+      linkedInLink: 'https://www.linkedin.com/in/mdsaifulislamrafel',
+      githubLink: 'https://github.com/mdsaifulislamrafel'
+    },
+    {
+      name: 'Abdullah Al Nirob',
+      designation: "Web Developer & Marketer",
+      image: Nirob,
+      FBLink: 'https://www.facebook.com/dev.abdullahalnirob',
+      linkedInLink: 'https://www.linkedin.com/in/abdullah-al-nirob-096994295',
+      githubLink: 'https://github.com/abdullahalnirob'
+    },
+    {
+      name: 'Nazmin Akter Noor',
+      designation: "Web Developer & Marketer",
+      image: Nazmin,
+      FBLink: 'https://www.facebook.com/nazmin.noor13',
+      linkedInLink: 'https://www.linkedin.com/in/nazmin-akter-noor',
+      githubLink: 'https://github.com/NazminNoor',
+    },
+    {
+      name: 'Afiya Akter Alpona',
+      designation: "Digital Marketer",
+      image: Alpona,
+      FBLink: 'https://www.facebook.com/profile.php?id=100064763745732',
+      linkedInLink: 'https://www.linkedin.com',
+      githubLink: 'https://github.com',
+    },
+    {
+      name: 'Shah Nawaz',
+      designation: "Web Developer",
+      image: ShahNawaz,
+      FBLink: 'https://www.facebook.com/snh.sabbir',
+      linkedInLink: 'https://www.linkedin.com/in/shah-nawaz-haque',
+      githubLink: 'https://github.com/snh-sabbir'
+    },
+    {
+      name: 'Tanjim Ahemed Chowdhury',
+      designation: "Web Developer",
+      image: Tanjim,
+      FBLink: 'https://www.facebook.com/tanjim.ahmedchowdhury.12',
+      linkedInLink: 'https://www.linkedin.com/in/tanjim-ahemed-chowdhury-436b1932b/',
+      githubLink: 'https://github.com/tanjimN4'
+    },
+    {
+      name: 'Md Hazrat Ali',
+      designation: "Web Developer",
+      image: Hazrat,
+      FBLink: 'https://www.facebook.com/mdhazratali.hazrat.000000',
+      linkedInLink: 'https://www.linkedin.com/in',
+      githubLink: 'https://github.com/Md-Hazrat'
+    },
+  ];
+
   return (
     <div className="overflow-x-hidden py-16 px-6 md:px-16 lg:px-36 bg-[right_bottom] md:bg-[right_center]">
       <div className="container">
-        <h1 className="text-5xl text-center font-bold text-gray-800 my-8" data-aos="fade-up" data-aos-duration="600">
+        <h1
+          className="text-5xl text-center font-bold text-gray-800 my-8"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
           Our Team Members
         </h1>
         <div className="bg-slate-100 py-2 px-4 ring-1 ring-gray-300 w-[max-content] rounded-xl justify-center flex items-center mx-auto">
           <h1 className="text-black justify-center flex items-center">
-            <span className="text-[#afafaf]">CodeCraftor</span>{" "}
+            <span className="text-[#afafaf]">CodeCraftor</span>{ " "}
             <TbMathGreater className="mx-2" /> Our Team Members
           </h1>
         </div>
@@ -23,31 +101,16 @@ const Team = () => {
             data-aos-duration="1000"
             src={Teamgoals}
             className="w-[60%] md:w-[40%]"
+            alt="Team goals representation"
           />
           <p
             data-aos="fade-left"
             data-aos-duration="1000"
             className="md:text-xl text-[#173282]"
           >
-            At CodeCraftor it, we are a versatile team of creative designers,
-            skilled Ui/Ux Design, Logo And Brand Identity Design, Marketing
-            Design, and savvy marketing strategists. Together, we transform
-            ideas into captivating digital experiences that drive business
-            growth and make your brand shine.
+            CodeCraftor is a one-stop digital solutions company offering expert web development, SEO, digital marketing, and UI/UX design services. Our skilled team crafts custom websites and applications while optimizing for search engines and delivering engaging user experiences. We help businesses grow with tailored marketing strategies and comprehensive digital support.
           </p>
         </div>
-        {/* <div className="grid grid-cols-3 gap-4 mt-16">
-          <div className="">
-            <img
-              src={profile}
-              className="w-[300px] rounded-md ring-[#ccc] ring-1"
-            />
-            <div className="p-3 bg-white w-[200px] rounded-se-lg rounded-es-lg relative bottom-12">
-              <p className="text-xl">Abdullah Al Nirob</p>
-              <p className="text-gray-400">Web Developer</p>
-            </div>
-          </div>
-        </div> */}
         <section className="py-6 dark:bg-gray-100 dark:text-gray-800 rounded-md">
           <div className="p-4 mx-auto space-y-16 sm:p-10">
             <div className="space-y-4">
@@ -63,641 +126,38 @@ const Team = () => {
                 data-aos-duration="700"
                 className="max-w-2xl dark:text-gray-600"
               >
-                At a assumenda quas cum earum ut itaque commodi saepe rem
-                aspernatur quam natus quis nihil quod, hic explicabo doloribus
-                magnam neque, exercitationem eius sunt!
+                We are a team of passionate developers and creative thinkers,
+                constantly pushing boundaries to deliver the best for our
+                clients.
               </p>
             </div>
             <div className="grid w-full grid-cols-1 gap-x-10 gap-y-20 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
+              {Members.map((member) => (
+                <div key={member.name} className="space-y-4 shadow-md p-4 rounded-md">
+                  <img
+                    alt={member.name}
+                    className="object-cover ring-1 ring-[#ccc] h-72 w-64 mx-auto mb-4 bg-center rounded-sm"
+                    src={member.image}
+                  />
+                  <div className="flex flex-col items-center">
+                    <h4 className="text-xl font-semibold">{member.name}</h4>
+                    <p className="text-sm dark:text-gray-600">
+                      {member.designation}
+                    </p>
+                  </div>
+                  <div className="flex justify-center space-x-4 text-gray-700">
+                    <a href={member.FBLink} target="_blank" rel="noopener noreferrer">
+                      <FaFacebook className="w-5 h-5" />
                     </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
+                    <a href={member.linkedInLink} target="_blank" rel="noopener noreferrer">
+                      <FaLinkedin className="w-5 h-5" />
                     </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
+                    <a href={member.githubLink} target="_blank" rel="noopener noreferrer">
+                      <FaGithub className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <img
-                  alt=""
-                  className="object-cover ring-1 ring-[#ccc] h-56 mx-auto mb-4 bg-center rounded-sm"
-                  src="https://scontent.fjsr11-1.fna.fbcdn.net/v/t39.30808-6/435297943_1209088920068171_3490700636219041430_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNuTMKKJylVBCKYXC2rakv13nDQY5SK1DXecNBjlIrUF3YMG31yZfyGHgezmjaYssOTFXREAer9IHdZOuNxneP&_nc_ohc=akNx6qTT0OsQ7kNvgF475GS&_nc_ht=scontent.fjsr11-1.fna&_nc_gid=AJQMclkBqFeeM83dnPmlrK_&oh=00_AYDsG7C9a3RBbKCPZ5k4DN6tI2z4gWZnzoTD2UfS6xBWxw&oe=67032C1A"
-                />
-                <div className="flex flex-col items-center">
-                  <h4 className="text-xl font-semibold">Arafat Islam</h4>
-                  <p className="text-sm dark:text-gray-600">CEO CodeCraftor</p>
-                  <div className="flex mt-2 space-x-5">
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="Twitter"
-                      className="dark:text-gray-600"
-                    >
-                      <FaTwitter />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="LinkedIn"
-                      className="dark:text-gray-600"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      rel="noopener noreferrer"
-                      href="#"
-                      title="GitHub"
-                      className="dark:text-gray-600"
-                    >
-                      <FaGithub />
-                    </a>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>

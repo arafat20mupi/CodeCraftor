@@ -1,119 +1,136 @@
-import React from "react";
-import { TbMathGreater } from "react-icons/tb";
-
-const projects = [
-  {
-    category: "Web Development",
-    title: "The Catalyzer",
-    description: "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-    image: "https://dummyimage.com/720x400",
-    link: "#",
-  },
-  {
-    category: "Design",
-    title: "The Innovator",
-    description: "Snackwave vaporware mixtape vaporware bitters cloud bread mixtape.",
-    image: "https://dummyimage.com/721x401",
-    link: "#",
-  },
-  {
-    category: "Mobile App",
-    title: "The Creator",
-    description: "Fanny pack cronut art party vegan tacos williamsburg mixtape.",
-    image: "https://dummyimage.com/722x402",
-    link: "#",
-  },
-  {
-    category: "UI/UX",
-    title: "The Visionary",
-    description: "Poke kinfolk art party cloud bread vaporware sriracha snackwave.",
-    image: "https://dummyimage.com/723x403",
-    link: "#",
-  },
-  {
-    category: "Branding",
-    title: "The Architect",
-    description: "Chia shaman kickstarter af prism butcher helvetica bitters.",
-    image: "https://dummyimage.com/724x404",
-    link: "#",
-  },
-  {
-    category: "Consulting",
-    title: "The Strategist",
-    description: "Sriracha enamel pin meggings helvetica air plant humblebrag.",
-    image: "https://dummyimage.com/725x405",
-    link: "#",
-  },
-  // Add more projects as needed
-];
+import React, { useState } from 'react';
+import './portfolio.css';
 
 const Portfolio = () => {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const projects = [
+    {
+      id: 1,
+      title: 'Teachable Class',
+      img: 'teacher.png',
+      categories: ['Client Work', 'React JS', 'Tailwind CSS', 'Express JS',  'MongoDB'],
+      liveLink: 'https://teachable-class.netlify.app',
+
+    },
+    {
+      id: 2,
+      title: 'StaffStream',
+      img: 'staffsteam.png',
+      categories: [ 'Client Work','React JS', 'Tailwind CSS', 'Express JS', 'MongoDB', 'JWT'],
+      liveLink: 'https://staffstream.netlify.app/',
+
+    },
+    {
+      id: 3,
+      title: 'Othaba.com',
+      img: 'othoba-com.png',
+      categories: [ 'Client Work', 'React JS', 'Tailwind CSS', 'MongoDB', 'Express JS', 'Firebase'],
+      liveLink: 'https://othoba-com.netlify.app',
+
+    },
+    {
+      id: 4,
+      title: 'Hotel Booking',
+      img: 'room.png',
+      categories: [ 'Client Work', 'React JS', 'Tailwind CSS', 'MongoDB', 'Express JS', 'Firebase'],
+      liveLink: 'https://hotels-bookings-room.netlify.app/',
+    },
+    {
+      id: 5,
+      title: 'Art And Craft',
+      img: 'art.png',
+      categories: ['Client Work', 'React JS', 'Tailwind CSS', 'MongoDB', 'Express JS', 'Firebase'],
+      liveLink: 'https://art-and-craft-store.netlify.app',
+
+    },
+    {
+      id: 6,
+      title: 'Sparlax',
+      img: 'art.png',
+      categories: [ 'Google Map','Client Work', 'React JS',  'Tailwind CSS', 'MongoDB', 'Express JS', 'Firebase'],
+      liveLink: 'https://sparlax.com',
+
+    },
+    {
+      id: 7,
+      title: 'School',
+      img: 'school.png',
+      categories: ['Client Work', 'React JS',  'Tailwind CSS',  'Firebase'],
+      liveLink: 'https://thakurgaon-sugar-mills-high-school.netlify.app',
+
+    },
+    {
+      id: 8,
+      title: 'Houses Sale',
+      img: 'houses-sale.png',
+      categories: ['Client Work', 'React JS',  'Tailwind CSS',  'Firebase'],
+      liveLink: 'https://houses-sale.netlify.app',
+    },
+    {
+      id: 9,
+      title: 'Houses Sale',
+      img: 'houses-sale.png',
+      categories: ['Client Work', 'React JS',  'Tailwind CSS', 'JavaScript'],
+      liveLink: 'https://books-vibs.netlify.app',
+    },
+    
+  ];
+
+  const allCategories = ['All', ...new Set(projects.flatMap((project) => project.categories))];
+
+  const handleFilter = (category) => setSelectedCategory(category);
+
+  const filteredProjects =
+    selectedCategory === 'All'
+      ? projects
+      : projects.filter((project) => project.categories.includes(selectedCategory));
+
+  const ProjectLinks = ({ liveLink, clientLink, serverLink }) => (
+    <div className="buttons flex flex-wrap gap-2 mt-4">
+      {liveLink && (
+        <a href={liveLink} target="_blank" rel="noopener noreferrer" className="link-btn bg-blue-500">
+          Live View
+        </a>
+      )}
+     
+    </div>
+  );
+
   return (
-    <div className="overflow-x-hidden py-16 px-6 md:px-16 lg:px-36 bg-[right_bottom] md:bg-[right_center]">
-      <div className="container">
-        <h1
-          className="text-5xl text-center font-bold text-gray-800 my-8"
-          data-aos="fade-up"
-          data-aos-duration="600"
-        >
-          Our Portfolio
-        </h1>
-        <div className="bg-slate-100 py-2 px-4 ring-1 ring-gray-300 w-[max-content] rounded-xl justify-center flex items-center mx-auto">
-          <h1 className="text-black justify-center flex items-center">
-            <span className="text-[#afafaf]">CodeCraftor</span>{" "}
-            <TbMathGreater className="mx-2" /> Portfolio
-          </h1>
-        </div>
+    <div className="portfolio bg-gray-900 text-white py-16 px-6 md:px-16 lg:px-36">
+      <h1 className="text-center text-4xl font-bold mb-8">My Portfolio</h1>
+      <div className="categories flex flex-wrap justify-center gap-4 mb-12">
+        {allCategories.map((category) => (
+          <button
+            key={category}
+            className={`px-6 py-2 rounded-full ${
+              selectedCategory === category ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'
+            }`}
+            onClick={() => handleFilter(category)}
+            aria-label={`Filter by ${category}`}
+          >
+            {category}
+          </button>
+        ))}
       </div>
-      <div
-        className="container px-5 py-24 mx-auto"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div className="flex flex-wrap -m-4">
-          {projects.map((project, index) => (
-            <div className="p-4 md:w-1/3" key={index}>
-              <div className="h-full border-2 bg-white border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={project.image}
-                  alt={project.title}
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    {project.category}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed mb-3">
-                    {project.description}
-                  </p>
-                  <div className="flex items-center flex-wrap">
-                    <a
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer hover:underline"
-                      href={project.link}
-                    >
-                      View Project
-                      <svg
-                        className="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
+      <div className="projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {filteredProjects.map((project) => (
+          <div key={project.id} className="project-card bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <div className="img-container">
+              <img src={project.img} alt={project.title} className="w-full h-48 object-cover" />
             </div>
-          ))}
-        </div>
+            <div className="p-6">
+              <h2 className="text-xl font-bold">{project.title}</h2>
+              <p className="text-sm text-gray-400 my-3">{project.categories.join(', ')}</p>
+              <ProjectLinks
+                liveLink={project.liveLink}
+                clientLink={project.clientLink}
+                serverLink={project.serverLink}
+              />
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

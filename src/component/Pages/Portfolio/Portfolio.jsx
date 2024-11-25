@@ -4,6 +4,8 @@ import './portfolio.css';
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
+
+  
   const projects = [
     {
       id: 1,

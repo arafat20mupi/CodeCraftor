@@ -4,13 +4,13 @@ import Home from "../Pages/Home/Home";
 import Error from "../Pages/Error/Error";
 import Team from "../Pages/Team/Team";
 import Career from "../Pages/Career/Career";
-import Portfolio from "../Pages/Portfolio/Portfolio";
 import CaseStudies from "../Pages/Home/CaseStudies/CaseStudies";
 import ProjectShowcase from "../Pages/Home/ProjectShowcase/ProjectShowcase";
 import Faq from "../Pages/Faq/Faq";
 import Company from "../Pages/Company/Company";
 import Apply from "../Pages/Apply/Apply";
 import Contact from "../Pages/Contact/Contact";
+import Portfolio from "../Pages/Portfolio/Portfolio";
 
 export const router = createBrowserRouter([
   {

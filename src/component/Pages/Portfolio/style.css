@@ -1,0 +1,31 @@
+.img-container {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 4s linear;
+    width: 100%;
+    height: auto;
+  }
+  
+  .img-container:hover img {
+    transform: translateY(-50%);
+  }
+  
+  .link-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link-btn:hover {
+    opacity: 0.9;
+  }
+  

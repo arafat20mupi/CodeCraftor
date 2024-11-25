@@ -10,6 +10,7 @@ import Alpona from '../../../assets/images/team/Alpona.jpeg'
 import ShahNawaz from '../../../assets/images/team/ShahNawaz.jpeg'
 import Tanjim from '../../../assets/images/team/Tanjim.png'
 import Hazrat from '../../../assets/images/team/Hojrat.jpg'
+import rifat from '../../../assets/images/team/rifat.jpg'
 
 const Team = () => {
   const Members = [
@@ -77,6 +78,14 @@ const Team = () => {
       linkedInLink: 'https://www.linkedin.com/in',
       githubLink: 'https://github.com/Md-Hazrat'
     },
+    {
+      name: 'Md Rifat Islam',
+      designation: "Web Developer",
+      image: rifat,
+      FBLink: 'https://www.facebook.com/Mdrifat.hasan.39395033',
+      linkedInLink: 'https://www.linkedin.com/in',
+      githubLink: 'https://github.com/rifat-islam2026'
+    },
   ];
 
   return (
@@ -91,7 +100,7 @@ const Team = () => {
         </h1>
         <div className="bg-slate-100 py-2 px-4 ring-1 ring-gray-300 w-[max-content] rounded-xl justify-center flex items-center mx-auto">
           <h1 className="text-black justify-center flex items-center">
-            <span className="text-[#afafaf]">CodeCraftor</span>{ " "}
+            <span className="text-[#afafaf]">CodeCraftor</span>{" "}
             <TbMathGreater className="mx-2" /> Our Team Members
           </h1>
         </div>
@@ -133,7 +142,10 @@ const Team = () => {
             </div>
             <div className="grid w-full grid-cols-1 gap-x-10 gap-y-20 sm:grid-cols-2 lg:grid-cols-3">
               {Members.map((member) => (
-                <div key={member.name} className="space-y-4 shadow-md p-4 rounded-md">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  key={member.name} className="space-y-4 shadow-md p-4 rounded-md">
                   <img
                     alt={member.name}
                     className="object-cover ring-1 ring-[#ccc] h-72 w-64 mx-auto mb-4 bg-center rounded-sm"

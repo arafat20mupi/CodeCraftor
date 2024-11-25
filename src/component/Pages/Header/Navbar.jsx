@@ -148,7 +148,7 @@ const Navbar = () => {
 
           {/* Desktop Contact Section */}
           <div className="hidden sm:flex sm:items-center sm:space-x-4">
-            <Link to={'/contact'} className="btn btn-outline text-[#183282] rounded-xl border border-[#FF9A63]">
+            <Link to={'/contact'} className="btn btn-outline ext-white transition-colors duration-200 ease-in-out group-hover:text-blue-600  rounded-xl border border-[#FF9A63]">
               Contact us
             </Link>
           </div>

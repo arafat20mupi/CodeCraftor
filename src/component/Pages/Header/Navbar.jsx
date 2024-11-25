@@ -104,12 +104,7 @@ const Navbar = () => {
               </button>
               {activeItem === "Services" && (
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md">
-                  <Link
-                    to={'/Project'}
-                    className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                  >
-                    Projects
-                  </Link>
+                  
                   <Link
                     to={'/CaseStudies'}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
@@ -218,12 +213,7 @@ const Navbar = () => {
             </button>
             {activeItem === "Services" && (
               <div className="pl-6">
-                <Link
-                  to={'/Project'}
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                >
-                  Projects
-                </Link>
+                
                 <Link
                   to={'/CaseStudies'}
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"

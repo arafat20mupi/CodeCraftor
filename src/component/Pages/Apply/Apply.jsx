@@ -25,7 +25,7 @@ const Apply = () => {
 
     try {
       // Submit the form with the resume string and jobName
-      const response = await axios.post('http://localhost:5000/apply/apply', formData, {
+      const response = await axios.post('https://codecraftor.vercel.app/apply/apply', formData, {
         headers: { 'Content-Type': 'application/json' }, 
       });
 

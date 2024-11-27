@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo Section */}
-          <div className="flex items-center">
+          <Link to='/' className="flex items-center">
             <img
               src={CodeCraftor}
               alt="CodeCraftor Logo"
@@ -45,7 +45,7 @@ const Navbar = () => {
             <span className="md:ml-2 text-sm md:text-xl font-semibold bg-gdt">
               CodeCraftor
             </span>
-          </div>
+          </Link>
 
           {/* Responsive Menu Button */}
           <div className="flex items-center sm:hidden">
@@ -104,19 +104,19 @@ const Navbar = () => {
               </button>
               {activeItem === "Services" && (
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md">
-                  
+
                   <Link
                     to={'/CaseStudies'}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Case Studies
                   </Link>
-                  <Link
+                  {/* <Link
                     to={''}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                   >
                     Testimonials
-                  </Link>
+                  </Link> */}
                   <Link
                     to={'/career'}
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
@@ -133,7 +133,7 @@ const Navbar = () => {
               Our Team
             </Link>
             <Link
-              to={'/company'}
+              to={'/Policy'}
               className="text-gray-800 hover:text-blue-600 transition duration-200 ease-in-out"
             >
               Policy
@@ -162,7 +162,7 @@ const Navbar = () => {
           } transition-transform duration-300 ease-in-out z-40`}
       >
         <div className="flex justify-between items-center px-4 py-3">
-          <span className="text-lg font-semibold">Menu</span>
+          <span className="text-lg font-semibold">CodeCraftor</span>
           <button
             onClick={() => setIsMenuOpen(false)}
             className="text-gray-400 hover:text-gray-500"
@@ -191,52 +191,31 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to={''}
+            to='/Policy'
             className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md"
           >
             Policy
           </Link>
           <Link
-            to={''}
+            to={'/portfolio'}
             className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md"
           >
             Portfolio
           </Link>
-          <div className="relative">
-            <button
-              onClick={() =>
-                setActiveItem(activeItem === "Services" ? null : "Services")
-              }
-              className="flex items-center justify-between w-full text-gray-800 hover:bg-gray-100 px-3 py-2 rounded-md"
-            >
-              Services <IoMdArrowDropdown className="text-2xl" />
-            </button>
-            {activeItem === "Services" && (
-              <div className="pl-6">
-                
-                <Link
-                  to={'/CaseStudies'}
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                >
-                  Case Studies
-                </Link>
-                <Link
-                  to={''}
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                >
-                  Testimonials
-                </Link>
-                <Link
-                  to={'/career'}
-                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                >
-                  Career
-                </Link>
-              </div>
-            )}
-          </div>
           <Link
-            href="/our-team"
+            to='/CaseStudies'
+            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+          >
+            Case Studies
+          </Link>
+          <Link
+            to='/career'
+            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+          >
+            Career
+          </Link>
+          <Link
+            to="/our-team"
             className="text-gray-800 hover:bg-gray-100 block px-3 py-2 rounded-md"
           >
             Our Team
@@ -250,7 +229,7 @@ const Navbar = () => {
         </div>
         <div className="px-2 pb-3 space-y-1">
           <Link
-            to={'/'}
+            to={'/contact'}
             className="relative inline-flex items-center justify-start  px-5 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-full hover:bg-white group"
           >
             <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>

@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 AOS.init();
 
-const Banner = ()  => {
+const Banner = () => {
     return (
         <div
             style={{
@@ -31,8 +31,7 @@ const Banner = ()  => {
             </div>
             <div data-aos="zoom-in" data-aos-duration="1000" className="w-full">
                 <p className="text-lg md:text-xl w-[327px] md:w-[440px] text-[#183282]  font-normal leading-6 md:leading-8">
-                    Empower your franchisees and locations to grow with our intelligent dashboards and tools.
-                </p>
+                    Empower your business with our expert web development services, tailored to meet your unique needs.                </p>
                 <Link to={'/contact'} className="btn w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 mt-8 md:mt-16">
                     Contact us
                 </Link>

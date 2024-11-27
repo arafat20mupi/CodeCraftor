@@ -1,6 +1,7 @@
 import React from "react";
 import { FaMapMarkerAlt, FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Contact from "../Contact/Contact";
 
 const Career = () => {
   const jobs = [
@@ -56,6 +57,7 @@ const Career = () => {
           </div>
         ))}
       </div>
+      <Contact/>
     </div>
   );
 };

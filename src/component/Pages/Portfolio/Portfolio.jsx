@@ -11,7 +11,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: 'Teachable Class',
-      img: 'teacher.png',
+      img: 'https://i.ibb.co.com/CPjhfWB/screencapture-teachable-class-netlify-app-2024-11-27-12-32-49.png',
       categories: ['Client Work', 'React JS', 'Tailwind CSS', 'Express JS', 'MongoDB'],
       liveLink: 'https://teachable-class.netlify.app',
 
@@ -50,7 +50,7 @@ const Portfolio = () => {
     {
       id: 6,
       title: 'Sparlax',
-      img: 'art.png',
+      img: 'Sparlax.png',
       categories: ['Google Map', 'Client Work', 'React JS', 'Tailwind CSS', 'MongoDB', 'Express JS', 'Firebase'],
       liveLink: 'https://sparlax.com',
 

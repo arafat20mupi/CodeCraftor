@@ -8,6 +8,7 @@ import starBg from '../../../../assets/images/star-bg.png';
 import writer from '../../../../assets/images/writer.png';
 import circle from '../../../../assets/images/cercule.png';
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';
 
 const HowWeDo = () => {
     return (
@@ -38,8 +39,8 @@ const HowWeDo = () => {
             <section>
                 <div className='flex-1 md:flex items-center justify-center p-5'>
                     <div data-aos="fade-up" data-aos-duration="1000" className='space-y-7'>
-                        <h2 className='w-full md:w-[476px] text-5xl md:text-6xl font-semibold text-white leading-[68px] tracking-tight'>Design beautiful websites</h2>
-                        <p className='w-[327px] md:w-[377px] text-sm md:text-base font-normal text-white leading-6'>Empower your franchisees and locations to grow with our intelligent dashboards and tools.</p>
+                        <h2 className='w-full md:w-[476px] text-5xl md:text-6xl font-semibold text-white leading-[68px] tracking-tight'>Build stunning web solutions with CodeCraftor</h2>
+                        <p className='w-[327px] md:w-[377px] text-sm md:text-base font-normal text-white leading-6'>Empower your business with our expert web development services, tailored to meet your unique needs.</p>
                         <button className="btn w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 ">
                             Contact us
                         </button>
@@ -48,22 +49,22 @@ const HowWeDo = () => {
                             <div className="avatar-group -space-x-6 rtl:space-x-reverse">
                                 <div className="avatar">
                                     <div className="w-8 ml-1">
-                                        <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" />
                                     </div>
                                 </div>
                                 <div className="avatar">
                                     <div className="w-8 ml-1">
-                                        <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                        <img src="https://randomuser.me/api/portraits/men/45.jpg" />
                                     </div>
                                 </div>
                                 <div className="avatar">
                                     <div className="w-8 ml-1">
-                                        <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                        <img src="https://randomuser.me/api/portraits/women/46.jpg" />
                                     </div>
                                 </div>
                                 <div className="avatar">
                                     <div className="w-8 ml-1">
-                                        <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                        <img src="https://randomuser.me/api/portraits/men/47.jpg" />
                                     </div>
                                 </div>
                             </div>
@@ -79,6 +80,7 @@ const HowWeDo = () => {
                 </div>
             </section>
 
+
             {/* Three section */}
             <section style={{
                 backgroundImage: `url(${starBg})`,
@@ -86,7 +88,7 @@ const HowWeDo = () => {
                 backgroundPosition: 'right top',
 
             }} className='flex flex-col items-center '>
-                <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" className='text-4xl md:text-6xl font-semibold md:leading-[68px] w-full md:w-[40%] text-center my-20'>Retail franchise digital marketing</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" className='text-3xl md:text-5xl font-semibold md:leading-[68px] w-full md:w-[40%] text-center my-20'>Build Retail Franchise Websites That Convert</h2>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                     <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" className='w-[374px] h-[372px] md:mt-16 border-2 border-[#FFFFFF33] py-8 px-9 rounded-[20px] bg-[#183282]'>
                         <h4 className='text-white text-3xl font-semibold leading-7 mb-3 tracking-tighter'>Web Development</h4>
@@ -184,9 +186,9 @@ const HowWeDo = () => {
                         </ul>
                     </div>
                 </div>
-                <button data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000" className="btn my-24 w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 ">
+                <Link to='/contact' data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000" className="btn my-24 w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 ">
                     Contact us
-                </button>
+                </Link>
             </section>
 
             {/* four section */}
@@ -217,9 +219,9 @@ const HowWeDo = () => {
                         <p className='text-xs'>Pixel perfect projects designed</p>
                     </div>
                 </div>
-                <button data-aos="flip-up" data-aos-delay="50" data-aos-duration="500" className="btn my-28 w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 ">
+                <Link to='/contact' data-aos="flip-up" data-aos-delay="50" data-aos-duration="500" className="btn my-28 w-full md:w-[164px] bg-gradient-to-r from-[#FF9A63] to-[#FE804B] text-white text-sm font-normal leading-6 ">
                     Contact us
-                </button>
+                </Link>
             </section>
 
             {/* four section */}

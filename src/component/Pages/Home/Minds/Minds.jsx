@@ -2,6 +2,7 @@ import firstImg from '../../../../assets/images/first.png';
 import secundImg from '../../../../assets/images/secund.png';
 import theadImg from '../../../../assets/images/thard.png';
 import fourImg from '../../../../assets/images/four.png';
+import { Link } from 'react-router-dom';
 
 const Minds = () => {
     return (
@@ -71,7 +72,7 @@ const Minds = () => {
                     </div>
 
                     <div data-aos="flip-up" data-aos-delay="50" data-aos-duration="500" className="py-20 flex justify-center items-center text-white ">
-                        <button className="px-11 font-medium py-4 rounded-xl bg-[#FF9A63]">See all projects</button>
+                        <Link to='/portfolio' className="px-11 font-medium py-4 rounded-xl bg-[#FF9A63]">See all projects</Link>
                     </div>
 
                 </div>

@@ -51,7 +51,7 @@ export const router = createBrowserRouter([
         element: <Faq></Faq>,
       },
       {
-        path: "/company",
+        path: "/Policy",
         element: <Company></Company>,
       },
       {

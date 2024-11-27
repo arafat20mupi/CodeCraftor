@@ -32,7 +32,7 @@ const Team = () => {
     },
     {
       name: 'Abdullah Al Nirob',
-      designation: "Web Developer & Marketer",
+      designation: "CTO & Web Developer",
       image: Nirob,
       FBLink: 'https://www.facebook.com/dev.abdullahalnirob',
       linkedInLink: 'https://www.linkedin.com/in/abdullah-al-nirob-096994295',

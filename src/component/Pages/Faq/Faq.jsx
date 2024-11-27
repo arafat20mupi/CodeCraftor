@@ -1,5 +1,6 @@
 import { TbMathGreater } from 'react-icons/tb';
-import faq from '../../../assets/images/faq.png'
+import faq from '../../../assets/images/faq.png';
+
 const Faq = () => {
     return (
         <div className='bg-gradient-to-r '>
@@ -21,55 +22,55 @@ const Faq = () => {
                 <div className="w-[90%] mx-auto mt-4">
                     <div className=" md:flex  gap-28 justify-center ">
                         <div data-aos="zoom-in-up" data-aos-duration="1000">
-                            <div data-aos="fade-right" data-aos-duration="1200"><h2 className="text-5xl md:text-6xl text-start font-semibold">Frequently Asked <br /> Questions</h2></div>
+                            <div data-aos="fade-right" data-aos-duration="1200">
+                                <h2 className="text-5xl md:text-6xl text-start font-semibold">Frequently Asked <br /> Questions</h2>
+                            </div>
                             <div data-aos="fade-right" data-aos-duration="1500" className="mt-10 md:mt-24">
-                                <img className='md:w-[800px]' src={faq} alt="" />
+                                <img className='md:w-[800px]' src={faq} alt="FAQ illustration" />
                             </div>
                         </div>
                         <div data-aos="zoom-in-down" data-aos-duration="1800" className="space-y-4">
-                            <div tabIndex={0} className=" collapse collapse-arrow border-b-2 border-white border-opacity-40 ">
-                                <div className="collapse-title text-xl  font-medium">Tell me your customer support?</div>
+                            <div tabIndex={0} className="collapse collapse-arrow border-b-2 border-white border-opacity-40">
+                                <div className="collapse-title text-xl font-medium">What services does CodeCraftor offer?</div>
                                 <div className="collapse-content">
-                                    <p>Frankly, it's the best in the business and we'll back that up with references from our clients moves at the speed of your business. Our Trainers and operations teams offer support in multiple time zones.</p>
+                                    <p>CodeCraftor specializes in providing end-to-end web development services, including front-end design, backend development, API integrations, and custom solutions tailored to meet client needs.</p>
                                 </div>
                             </div>
-                            <div tabIndex={0} className=" collapse collapse-arrow border-b-2 border-white border-opacity-40 ">
-                                <div className="collapse-title text-xl  font-medium">What does your reporting look like?</div>
+                            <div tabIndex={0} className="collapse collapse-arrow border-b-2 border-white border-opacity-40">
+                                <div className="collapse-title text-xl font-medium">What is your approach to client projects?</div>
                                 <div className="collapse-content">
-                                    <p>Frankly, it's the best in the business and we'll back that up with references from our clients moves at the speed of your business. Our Trainers and operations teams offer support in multiple time zones.</p>
+                                    <p>We follow a collaborative approach by understanding client requirements, providing regular updates, and delivering high-quality work on time. Transparency and communication are our top priorities.</p>
                                 </div>
                             </div>
-                            <div tabIndex={0} className=" collapse collapse-arrow border-b-2 border-white border-opacity-40 ">
-                                <div className="collapse-title text-xl  font-medium">What does training look like?</div>
+                            <div tabIndex={0} className="collapse collapse-arrow border-b-2 border-white border-opacity-40">
+                                <div className="collapse-title text-xl font-medium">How does CodeCraftor ensure quality?</div>
                                 <div className="collapse-content">
-                                    <p>Frankly, it's the best in the business and we'll back that up with references from our clients moves at the speed of your business. Our Trainers and operations teams offer support in multiple time zones.</p>
+                                    <p>Our experienced team uses the latest technologies and rigorous testing processes to ensure that every project meets the highest standards of quality and functionality.</p>
                                 </div>
                             </div>
-                            <div tabIndex={0} className=" collapse collapse-arrow border-b-2 border-white border-opacity-40 ">
-                                <div className="collapse-title text-xl  font-medium">What type of agencies do you work?</div>
+                            <div tabIndex={0} className="collapse collapse-arrow border-b-2 border-white border-opacity-40">
+                                <div className="collapse-title text-xl font-medium">What industries does CodeCraftor work with?</div>
                                 <div className="collapse-content">
-                                    <p>Frankly, it's the best in the business and we'll back that up with references from our clients moves at the speed of your business. Our Trainers and operations teams offer support in multiple time zones.</p>
+                                    <p>We work with diverse industries, including e-commerce, healthcare, technology, education, and startups, offering tailored solutions to help businesses grow digitally.</p>
                                 </div>
                             </div>
-                            <div tabIndex={0} className=" collapse collapse-arrow border-b-2 border-white border-opacity-40 ">
-                                <div className="collapse-title text-xl  font-medium">Is there any on-going training?</div>
+                            <div tabIndex={0} className="collapse collapse-arrow border-b-2 border-white border-opacity-40">
+                                <div className="collapse-title text-xl font-medium">Does CodeCraftor offer post-project support?</div>
                                 <div className="collapse-content">
-                                    <p>Frankly, it's the best in the business and we'll back that up with references from our clients moves at the speed of your business. Our Trainers and operations teams offer support in multiple time zones.</p>
+                                    <p>Yes, we provide ongoing support and maintenance to ensure your website or application runs smoothly, even after the project is delivered.</p>
                                 </div>
                             </div>
-                            <div tabIndex={0} className=" collapse collapse-arrow border-b-2 border-white border-opacity-40 ">
-                                <div className="collapse-title text-xl  font-medium">What if my clients have technical help?</div>
+                            <div tabIndex={0} className="collapse collapse-arrow border-b-2 border-white border-opacity-40">
+                                <div className="collapse-title text-xl font-medium">How do I get started with CodeCraftor?</div>
                                 <div className="collapse-content">
-                                    <p>Frankly, it's the best in the business and we'll back that up with references from our clients moves at the speed of your business. Our Trainers and operations teams offer support in multiple time zones.</p>
+                                    <p>You can get started by reaching out to us via email or our website. We'll schedule a consultation to understand your requirements and create a roadmap for your project.</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     );
 };
 

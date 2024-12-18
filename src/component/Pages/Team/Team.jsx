@@ -48,14 +48,6 @@ const Team = () => {
       githubLink: 'https://github.com/NazminNoor',
     },
     {
-      name: 'Afiya Akter Alpona',
-      designation: "Digital Marketer",
-      image: Alpona,
-      FBLink: 'https://www.facebook.com/profile.php?id=100064763745732',
-      linkedInLink: 'https://www.linkedin.com',
-      githubLink: 'https://github.com',
-    },
-    {
       name: 'Shah Nawaz',
       designation: "Web Developer",
       image: ShahNawaz,

@@ -11,6 +11,7 @@ import ShahNawaz from '../../../assets/images/team/ShahNawaz.jpeg'
 import Tanjim from '../../../assets/images/team/Tanjim.png'
 import Hazrat from '../../../assets/images/team/Hojrat.jpg'
 import rifat from '../../../assets/images/team/rifat.jpg'
+import Asif from '../../../assets/images/team/Asif.jpg'
 
 const Team = () => {
   const Members = [
@@ -85,6 +86,14 @@ const Team = () => {
       FBLink: 'https://www.facebook.com/Mdrifat.hasan.39395033',
       linkedInLink: 'https://www.linkedin.com/in',
       githubLink: 'https://github.com/rifat-islam2026'
+    },
+    {
+      name: 'Ushan Asif',
+      designation: "Web Developer",
+      image: Asif,
+      FBLink: 'https://www.facebook.com/udecipher',
+      linkedInLink: 'https://www.linkedin.com/in/asif-uddin-bhuiyan-1a83951b4',
+      githubLink: 'https://github.com/ushanasif'
     },
   ];
 

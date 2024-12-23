@@ -12,6 +12,7 @@ import Tanjim from '../../../assets/images/team/Tanjim.png'
 import Hazrat from '../../../assets/images/team/Hojrat.jpg'
 import rifat from '../../../assets/images/team/rifat.jpg'
 import Asif from '../../../assets/images/team/Asif.jpg'
+import Farabi from '../../../assets/images/team/Farabi.png'
 
 const Team = () => {
   const Members = [
@@ -86,6 +87,13 @@ const Team = () => {
       FBLink: 'https://www.facebook.com/udecipher',
       linkedInLink: 'https://www.linkedin.com/in/asif-uddin-bhuiyan-1a83951b4',
       githubLink: 'https://github.com/ushanasif'
+    },
+    {
+      name: 'Arvin Khan Farabi',
+      designation: "Digital Merketer",
+      image: Farabi,
+      FBLink: 'https://www.facebook.com/arvinkhanfarabi',
+      linkedInLink: 'https://www.linkedin.com/in/md-sarawar-tuhin-69aa53231',
     },
   ];
 

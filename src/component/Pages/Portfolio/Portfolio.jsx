@@ -48,14 +48,22 @@ const Portfolio = () => {
       categories: ['Client Work', 'Web Development'],
     },
     {
-      id: 31,
+      id: 6,
       title: 'Stationary for Cleaning Company',
       dis: 'Stationery for a Cleaning Company reflects professionalism, cleanliness, and trust through sleek, minimalist designs',
       img: 'https://i.ibb.co.com/tXnPLJV/13.png',
       categories: ['Client Work', 'Visual Design'],
     },
     {
-      id: 6,
+      id: 7,
+      title: 'CodeCraftor',
+      img: 'https://res.cloudinary.com/de4wnwrna/image/upload/v1735196200/screencapture-localhost-5173-2024-12-26-12_56_08_qw1kde.png',
+      technology: [ 'React JS', 'Tailwind CSS', 'MongoDB', 'Express JS', 'Firebase'],
+      liveLink: 'https://codecraftor.xyz',
+      categories: [ 'Web Development'],
+    },
+    {
+      id: 8,
       title: 'Sparlax',
       img: 'Sparlax.png',
       technology: ['Google Map', 'React JS', 'Tailwind CSS', 'MongoDB', 'Express JS', 'Firebase'],
@@ -63,35 +71,35 @@ const Portfolio = () => {
       categories: ['Client Work', 'Web Development'],
     },
     {
-      id: 21,
+      id: 9,
       title: 'IZI Coin',
       dis: 'Web-3 Elephant Coin UI/UX Design delivers a seamless, user-friendly interface for a blockchain-based platform.',
       img: 'https://i.ibb.co.com/yfQ4S2y/IZI-Coin.png',
       categories: ['Client Work', 'UI/UX Design'],
     },
     {
-      id: 32,
+      id: 10,
       title: 'Eletricare poster',
       dis: 'Eletricare Poster design highlights professionalism and reliability, showcasing electronic services with a sleek, modern aesthetic....',
       img: 'https://i.ibb.co.com/L0bPVT5/11.png',
       categories: ['Client Work', 'Visual Design'],
     },
     {
-      id: 22,
+      id: 11,
       title: 'West Mining',
       dis: 'West Mining UI/UX Design focuses on creating a seamless, user-friendly UI tailored for efficient and engaging mining operations management.',
       img: 'https://i.ibb.co.com/fQDx2py/West-Mining.png',
       categories: ['Client Work', 'UI/UX Design'],
     },
     {
-      id: 24,
+      id: 12,
       title: 'World Jewellery ',
       dis: 'World Jewellery UI/UX design offers an elegant, user-friendly experience for browsing and purchasing fine jewelry online.',
       img: 'https://i.ibb.co.com/WGg216j/Jewellery.png',
       categories: ['Client Work', 'UI/UX Design'],
     },
     {
-      id: 7,
+      id: 13,
       title: 'School',
       img: 'school.png',
       technology: ['React JS', 'Tailwind CSS', 'Firebase'],
@@ -99,7 +107,7 @@ const Portfolio = () => {
       categories: ['Client Work', 'Web Development'],
     },
     {
-      id: 8,
+      id: 14,
       title: 'Houses Sale',
       img: 'houses-sale.png',
       technology: ['React JS', 'Tailwind CSS', 'Firebase'],
@@ -107,7 +115,7 @@ const Portfolio = () => {
       categories: ['Client Work', 'Web Development'],
     },
     {
-      id: 9,
+      id: 15,
       title: 'Books Vibs',
       img: 'book.png',
       technology: ['React JS', 'Tailwind CSS', 'JavaScript'],
@@ -115,7 +123,7 @@ const Portfolio = () => {
       categories: ['Client Work', 'Web Development'],
     },
     {
-      id: 10,
+      id: 16,
       title: 'Lulu Baba',
       img: 'lulubaba.png',
       technology: ['React JS', 'Tailwind CSS', 'Firebase'],
@@ -123,7 +131,7 @@ const Portfolio = () => {
       categories: ['Client Work', 'Web Development'],
     },
     {
-      id: 11,
+      id: 17,
       title: 'Foodies',
       img: 'fudde.png',
       technology: ['React JS', 'Tailwind CSS', 'Firebase'],
@@ -131,7 +139,7 @@ const Portfolio = () => {
       categories: ['Client Work', 'Web Development'],
     },
     {
-      id: 12,
+      id: 18,
       title: 'Spa',
       img: 'Spa.png',
       technology: ['React JS', 'Tailwind CSS', 'Firebase'],
@@ -139,12 +147,36 @@ const Portfolio = () => {
       liveLink: 'https://spaweb4455.vercel.app',
     },
     {
-      id: 13,
+      id: 19,
       title: 'Food',
       img: 'Food.png',
       technology: ['React JS', 'Tailwind CSS', 'Firebase'],
       categories: ['Client Work', 'Web Development'],
       liveLink: 'https://food-webste-abdullah.vercel.app',
+    },
+    {
+      id: 20,
+      title: 'CodeCraftor Marketing 1',
+      video : 'https://res.cloudinary.com/de4wnwrna/video/upload/v1735195420/VID-20241113-WA0000_jpxrdp.mp4',
+      categories: [ 'Video Editing'],
+    },
+    {
+      id: 21,
+      title: 'CodeCraftor Marketing 2',
+      video : 'https://res.cloudinary.com/de4wnwrna/video/upload/v1735195453/VID-20241011-WA0000_oz3fes.mp4',
+      categories: ['Video Editing'],
+    },
+    {
+      id: 22,
+      title: 'Employment Agency',
+      video : 'https://res.cloudinary.com/de4wnwrna/video/upload/v1735195500/EV-01804194771_cypvcj.mp4',
+      categories: ['Client Work', 'Video Editing'],
+    },
+    {
+      id: 23,
+      title: 'CodeCraftor Marketing 3',
+      video : 'https://res.cloudinary.com/de4wnwrna/video/upload/v1735195467/VID-20240916-WA0000_e3h5nx.mp4',
+      categories: [ 'Video Editing'],
     },
   ];
 
@@ -168,7 +200,7 @@ const Portfolio = () => {
   );
 
   return (
-    <div className="portfolio py-16 px-6 md:px-16 lg:px-36">
+    <div className="portfolio py-16 px-6 md:px-16 ">
       <h1 className="text-5xl text-center font-bold my-8" data-aos="fade-up" data-aos-duration="600">
         Our Portfolio
       </h1>
@@ -196,10 +228,12 @@ const Portfolio = () => {
             key={project.id}
             data-aos="fade-up"
             data-aos-duration="600"
-            className="project-card rounded-lg shadow-md overflow-hidden"
+            className="project-card rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105"
           >
             <div className="img-container">
-              <img src={project.img && project?.img} alt={project.title} className="w-full h-48 object-cover" />
+              {
+                project.img ? <img src={project.img && project?.img} alt={project.title} className="w-full h-48 object-cover" /> : <video src={project.video} controls className="w-full h-48 object-cover"></video>
+              }
             </div>
             <div className="p-6">
               <h2 className="text-xl font-bold">{project.title}</h2>

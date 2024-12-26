@@ -148,7 +148,7 @@ const CaseStudies = () => {
     ];
     
     return (
-        <div  data-aos="fade-up" data-aos-duration="1000" className='space-y-8 py-8 px-6 md:px-16 lg:px-36  bg-blue-50'>
+        <div  data-aos="fade-up" data-aos-duration="1000" className='space-y-8 py-8 px-6 md:px-16  bg-blue-50'>
             <div className="w-full mx-auto py-12 px-4">
                 <div className='text-center mb-8 md:mb-10'>
                     <h5 className="text-[10px] mb-3 tracking-[5px] font-medium">CASE STUDIES</h5>

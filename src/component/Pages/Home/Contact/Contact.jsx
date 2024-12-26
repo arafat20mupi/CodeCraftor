@@ -56,9 +56,9 @@ const Contact = () => {
 
   return (
     <div className="w-full mx-auto px-4 py-24">
-      <div className="flex flex-col lg:flex-row w-full lg:w-[70%] mx-auto gap-8">
+      <div className="flex flex-col lg:flex-row w-full  mx-auto gap-8">
         {/* Contact Form Section */}
-        <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" className="w-full lg:w-[512px] pt-[78px] pb-[62px] px-[62px] bg-blue-50 p-8 rounded-lg shadow-lg mb-8 lg:mb-0">
+        <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" className="w-full  pt-[78px] pb-[62px] px-[62px] bg-blue-50 p-8 rounded-lg shadow-lg mb-8 lg:mb-0">
           <h2 className="text-blue-800 text-xl font-bold mb-4">CONTACT</h2>
           <h1 className="text-3xl font-bold mb-6">Let's get in touch</h1>
           <p className="text-lg mb-4">
@@ -147,7 +147,7 @@ const Contact = () => {
         </div>
 
         {/* Middle Info Section */}
-        <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" className="w-full lg:w-[280px] bg-blue-50 p-12 rounded-lg shadow-lg mb-8 lg:mb-0">
+        <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" className="w-full  bg-blue-50 p-12 rounded-lg shadow-lg mb-8 lg:mb-0">
           <div className="space-y-6 mt-14">
             {/* Info Items */}
             <div>
@@ -156,7 +156,7 @@ const Contact = () => {
               <hr className="border-1 mt-10 border-blue-900" />
             </div>
             <div>
-              <h3 className="text-3xl font-medium"><CountUp enableScrollSpy end={950} />+</h3>
+              <h3 className="text-3xl font-medium"><CountUp enableScrollSpy end={500} />+</h3>
               <p className="text-gray-500">Projects Done Around the World</p>
               <hr className="border-1 mt-10 border-blue-900" />
             </div>
@@ -178,7 +178,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Info Section */}
-        <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" className="w-full lg:w-[280px] bg-blue-50 p-12 rounded-lg shadow-lg">
+        <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000" className="w-full  bg-blue-50 p-12 rounded-lg shadow-lg">
           <div className="space-y-6 mt-14">
             <div className="space-y-5">
               <BiSupport className="text-4xl text-blue-600" />
@@ -193,7 +193,11 @@ const Contact = () => {
               <BsMap className="text-4xl text-blue-600" />
               <h3 className="text-xl font-bold">Our Address</h3>
               <p>Dinajpur, Bangladesh</p>
-              <p>Bangladesh</p>
+              <hr className="border-1 mt-10 border-blue-900" />
+            </div>
+            <div className="space-y-5">
+              <BsMap className="text-4xl text-blue-600" />
+              <p>Dhaka, Bangladesh</p>
               <hr className="border-1 mt-10 border-blue-900" />
             </div>
             <div className="space-y-5">

@@ -89,8 +89,8 @@ const HowWeDo = () => {
 
             }} className='flex flex-col items-center '>
                 <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" className='text-3xl md:text-5xl font-semibold md:leading-[68px] w-full md:w-[40%] text-center my-20'>Build Retail Franchise Websites That Convert</h2>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-                    <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" className='w-[374px] h-[372px] md:mt-16 border-2 border-[#FFFFFF33] py-8 px-9 rounded-[20px] bg-[#183282]'>
+                <div className='grid grid-cols-1  md:grid-cols-3 gap-6 mx-2 md:mx-5'>
+                    <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" className='  md:mt-16 border-2 border-[#FFFFFF33] py-8 px-9 rounded-[20px] bg-[#183282]'>
                         <h4 className='text-white text-3xl font-semibold leading-7 mb-3 tracking-tighter'>Web Development</h4>
                         <p className='text-white text-base font-normal leading-6 mb-7'>We specialize in developing interactive</p>
                         <ul className='list-decimal px-10 space-y-3'>
@@ -122,7 +122,7 @@ const HowWeDo = () => {
                         </ul>
                     </div>
 
-                    <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1200" className='w-[374px] h-[372px] md:h-[432px] border-2 border-[#FFFFFF33] py-8 px-9 rounded-[20px] bg-gradient-to-r from-[#7796FD] to-[#4958CC]'>
+                    <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1200" className='  border-2 border-[#FFFFFF33] py-8 px-9 rounded-[20px] bg-gradient-to-r from-[#7796FD] to-[#4958CC]'>
                         <h4 className='text-white text-3xl font-semibold leading-7 mb-3 tracking-tighter'>Web Design</h4>
                         <p className='text-white text-base font-normal leading-6 mb-7'>We specialize in developing interactive.</p>
                         <ul className='list-decimal px-10 space-y-3'>
@@ -154,7 +154,7 @@ const HowWeDo = () => {
                         </ul>
                     </div>
 
-                    <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" className='w-[374px] h-[372px] md:mt-16 border-2 border-[#FFFFFF33] py-8 px-9 rounded-[20px] bg-[#183282]'>
+                    <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" className='  md:mt-16 border-2 border-[#FFFFFF33] py-8 px-9 rounded-[20px] bg-[#183282]'>
                         <h4 className='text-white text-3xl font-semibold leading-7 mb-3 tracking-tighter'>E-commerce</h4>
                         <p className='text-white text-base font-normal leading-6 mb-7'>Developing interactive, scalable, brand-oriented.</p>
                         <ul className='list-decimal px-10 space-y-3'>
@@ -201,20 +201,20 @@ const HowWeDo = () => {
                 }}
                 className='flex flex-col items-center'>
                 <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" className='text-4xl md:text-6xl font-semibold md:leading-[68px] w-full md:w-[40%] text-center my-20'>Strategic design over the years</h2>
-                <div className='text-[#183282] grid grid-cols-1 md:grid-cols-4 gap-9'>
-                    <div data-aos="zoom-out-right" data-aos-delay="50" data-aos-duration="1000" className='bg-white py-8 px-12 w-[272px] h-[208px] rounded-xl space-y-3'>
+                <div className='text-[#183282] grid grid-cols-1 md:grid-cols-4 mx-1 md:mx-5 gap-9'>
+                    <div data-aos="zoom-out-right" data-aos-delay="50" data-aos-duration="1000" className='bg-white py-8 px-12  rounded-xl space-y-3'>
                         <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'><CountUp enableScrollSpy end={400} /></h2>
                         <p className='text-xs'>Talented people ready to being your vision</p>
                     </div>
-                    <div data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1200" className='bg-white py-8 px-12 w-[272px] h-[208px] rounded-xl space-y-3'>
+                    <div data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1200" className='bg-white py-8 px-12  rounded-xl space-y-3'>
                         <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'><CountUp enableScrollSpy end={15} /></h2>
                         <p className='text-xs'>Years of experience working with tech</p>
                     </div>
-                    <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000" className='bg-white py-8 px-12 w-[272px] h-[208px] rounded-xl space-y-3'>
+                    <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000" className='bg-white py-8 px-12  rounded-xl space-y-3'>
                         <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'><CountUp enableScrollSpy end={40} /></h2>
                         <p className='text-xs'>Offices in the United States</p>
                     </div>
-                    <div data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1200" className='bg-white py-8 px-12 w-[272px] h-[208px] rounded-xl space-y-3'>
+                    <div data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1200" className='bg-white py-8 px-12  rounded-xl space-y-3'>
                         <h2 className='text-[78px] font-extrabold leading-[80px] tracking-[-3px]'><CountUp enableScrollSpy end={3} />K+</h2>
                         <p className='text-xs'>Pixel perfect projects designed</p>
                     </div>

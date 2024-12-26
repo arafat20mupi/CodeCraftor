@@ -98,7 +98,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="overflow-x-hidden py-16 px-6 md:px-16 lg:px-36 bg-[right_bottom] md:bg-[right_center]">
+    <div className="overflow-x-hidden py-16 px-6 md:px-16  bg-[right_bottom] md:bg-[right_center]">
       <div className="container">
         <h1
           className="text-5xl text-center font-bold text-gray-800 my-8"
@@ -126,7 +126,7 @@ const Team = () => {
             data-aos-duration="1000"
             className="md:text-xl text-[#173282]"
           >
-            CodeCraftor is a one-stop digital solutions company offering expert web development, SEO, digital marketing, and UI/UX design services. Our skilled team crafts custom websites and applications while optimizing for search engines and delivering engaging user experiences. We help businesses grow with tailored marketing strategies and comprehensive digital support.
+            <strong>CodeCraftor</strong> is a one-stop digital solutions company offering expert web development, SEO, digital marketing, and UI/UX design , Video Editing services. Our skilled team crafts custom websites and applications while optimizing for search engines and delivering engaging user experiences. We help businesses grow with tailored marketing strategies and comprehensive digital support.
           </p>
         </div>
         <section className="py-6 dark:bg-gray-100 dark:text-gray-800 rounded-md">

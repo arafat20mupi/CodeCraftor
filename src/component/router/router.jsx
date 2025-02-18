@@ -11,6 +11,11 @@ import Company from "../Pages/Company/Company";
 import Apply from "../Pages/Apply/Apply";
 import Contact from "../Pages/Contact/Contact";
 import Portfolio from "../Pages/Portfolio/Portfolio";
+import SignUp from "../../Authintication/SignUp";
+import Login from "../../Authintication/Login";
+import AllUsers from "../../Dashboard/AllUsers";
+import AdminProvider from "../../Provider/AdminProvider";
+import JobApply from "../../Dashboard/JobApply";
 
 export const router = createBrowserRouter([
   {
@@ -62,6 +67,22 @@ export const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>
       },
+      {
+        path: '/signup',
+        element: <SignUp />,
+      },
+      {
+        path: '/login',
+        element: <Login />
+      },
+      {
+        path: '/users',
+        element: <AdminProvider><AllUsers /></AdminProvider>
+      },
+      {
+        path: '/AppliedJob',
+        element: <AdminProvider><JobApply/></AdminProvider>
+      }
     ],
   },
 ]);

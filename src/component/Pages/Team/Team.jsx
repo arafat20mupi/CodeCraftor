@@ -5,14 +5,11 @@ import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import Rafel from "../../../assets/images/team/Rafel.jpg";
 import Arafat from "../../../assets/images/team/Arafat.jpg";
 import Nirob from "../../../assets/images/team/Nirob.png";
-import Nazmin from "../../../assets/images/team/Nazmin.png";
-import Alpona from '../../../assets/images/team/Alpona.jpeg'
-import ShahNawaz from '../../../assets/images/team/ShahNawaz.jpeg'
-import Tanjim from '../../../assets/images/team/Tanjim.png'
-import Hazrat from '../../../assets/images/team/Hojrat.jpg'
-import rifat from '../../../assets/images/team/rifat.jpg'
-import Asif from '../../../assets/images/team/Asif.jpg'
-import Farabi from '../../../assets/images/team/Farabi.png'
+import Tanjim from '../../../assets/images/team/Tanjim.png';
+import Hazrat from '../../../assets/images/team/Hojrat.jpg';
+import rifat from '../../../assets/images/team/rifat.jpg';
+import Asif from '../../../assets/images/team/Asif.jpg';
+import Farabi from '../../../assets/images/team/Farabi.png';
 
 const Team = () => {
   const Members = [
@@ -34,27 +31,11 @@ const Team = () => {
     },
     {
       name: 'Abdullah Al Nirob',
-      designation: "CTO & Web Developer",
+      designation: "Web Developer",
       image: Nirob,
       FBLink: 'https://www.facebook.com/dev.abdullahalnirob',
       linkedInLink: 'https://www.linkedin.com/in/abdullah-al-nirob-096994295',
       githubLink: 'https://github.com/abdullahalnirob'
-    },
-    {
-      name: 'Nazmin Akter Noor',
-      designation: "Web Developer & Marketer",
-      image: Nazmin,
-      FBLink: 'https://www.facebook.com/nazmin.noor13',
-      linkedInLink: 'https://www.linkedin.com/in/nazmin-akter-noor',
-      githubLink: 'https://github.com/NazminNoor',
-    },
-    {
-      name: 'Shah Nawaz',
-      designation: "Web Developer",
-      image: ShahNawaz,
-      FBLink: 'https://www.facebook.com/snh.sabbir',
-      linkedInLink: 'https://www.linkedin.com/in/shah-nawaz-haque',
-      githubLink: 'https://github.com/snh-sabbir'
     },
     {
       name: 'Tanjim Ahemed Chowdhury',

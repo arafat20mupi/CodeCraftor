@@ -1,14 +1,14 @@
 import { useForm } from "react-hook-form";
 import { TbMathGreater } from "react-icons/tb";
 import Contact from "../Contact/Contact";
-import { useState } from "react";
-import axios from "axios";
 import toast from "react-hot-toast";
 import { useLocation } from "react-router-dom";
+import useAxiosPublic from "../../../Hook/axiosPublic";
 
 const Apply = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const location = useLocation();
+  const axios = useAxiosPublic()
   const { job } = location.state;
   const handleUpload = async (data) => {
     const formData = new FormData();
@@ -25,7 +25,7 @@ const Apply = () => {
 
     try {
       // Submit the form with the resume string and jobName
-      const response = await axios.post('https://codecraftor.vercel.app/apply/apply', formData, {
+      const response = await axios.post('/apply', formData, {
         headers: { 'Content-Type': 'application/json' }, 
       });
 
@@ -73,7 +73,7 @@ const Apply = () => {
           {/* Phone Section */}
           <div className="my-7">
             <label htmlFor="phone" className="text-black my-1">Your Phone Number <span className="text-red-600">*</span></label>
-            <input id="phone" {...register("phone", { required: "Phone number is required", minLength: { value: 10, message: "Phone number must be at least 10 digits" } })} type="number" className="w-full px-5 py-[15px] ring-slate-400 ring-2 rounded outline-[#1891C8]" placeholder="Enter your phone number" />
+            <input id="phone" {...register("phone", { required: "Phone number is required", minLength: { value: 10, message: "Phone number must be at least 11 digits" } })} type="number" className="w-full px-5 py-[15px] ring-slate-400 ring-2 rounded outline-[#1891C8]" placeholder="Enter your phone number" />
             {errors.phone && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
           </div>
 
@@ -87,8 +87,8 @@ const Apply = () => {
 
           {/* Resume Upload Section */}
           <div className="my-7">
-            <label htmlFor="resume" className="text-black">Resume Link (URL or Base64) <span className="text-red-600">*</span></label>
-            <input id="resume" {...register("resume", { required: "Resume is required" })} type="text" className="w-full my-2 px-5 py-[15px] ring-slate-400 ring-2 rounded outline-[#1891C8]" placeholder="Type Your Resume Link or Base64" />
+            <label htmlFor="resume" className="text-black">Resume Link (Google Drive URL) <span className="text-red-600">*</span></label>
+            <input id="resume" {...register("resume", { required: "Resume is required" })} type="text" className="w-full my-2 px-5 py-[15px] ring-slate-400 ring-2 rounded outline-[#1891C8]" placeholder="Type Your Resume Google Drive  Link " />
             {errors.resume && <p className="text-red-500 text-sm">{errors.resume.message}</p>}
           </div>
 

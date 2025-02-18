@@ -3,7 +3,7 @@ import logo from '../../../assets/images/Logo.jpeg'
 const Company = () => {
     return (
         <>
-            <section className="px-6 md:px-16 lg:px-36 mx-auto text-base text-gray-700 leading-relaxed space-y-8 mt-16 py-16">
+            <section className="px-6 md:px-16  mx-auto text-base text-gray-700 leading-relaxed space-y-8 mt-16 py-16">
                 <div className="text-center mb-12">
                     <h1 className="text-5xl font-extrabold text-gray-900 mb-4">Privacy Policy</h1>
                     <div className="mt-6">
@@ -88,12 +88,12 @@ const Company = () => {
                         </a>
                         </li>
                         <li>Email (Cooperation): <a
-                            href="mailto:codecraftor.web@gmail.com"
+                            href="mailto:codecraftorhr@gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-500"
                         >
-                            codecraftor.web@gmail.com
+                            codecraftorhr@gmail.com
                         </a>
                         </li>
                         <li>Email (Abuse): <a

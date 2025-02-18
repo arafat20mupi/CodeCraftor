@@ -5,11 +5,11 @@ import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import Rafel from "../../../assets/images/team/Rafel.jpg";
 import Arafat from "../../../assets/images/team/Arafat.jpg";
 import Nirob from "../../../assets/images/team/Nirob.png";
-import Nazmin from "../../../assets/images/team/Nazmin.png";
-import Alpona from '../../../assets/images/team/Alpona.jpeg'
-import ShahNawaz from '../../../assets/images/team/ShahNawaz.jpeg'
-import Tanjim from '../../../assets/images/team/Tanjim.png'
-import Hazrat from '../../../assets/images/team/Hojrat.jpg'
+import Tanjim from '../../../assets/images/team/Tanjim.png';
+import Hazrat from '../../../assets/images/team/Hojrat.jpg';
+import rifat from '../../../assets/images/team/rifat.jpg';
+import Asif from '../../../assets/images/team/Asif.jpg';
+import Farabi from '../../../assets/images/team/Farabi.png';
 
 const Team = () => {
   const Members = [
@@ -31,35 +31,11 @@ const Team = () => {
     },
     {
       name: 'Abdullah Al Nirob',
-      designation: "Web Developer & Marketer",
+      designation: "Web Developer",
       image: Nirob,
       FBLink: 'https://www.facebook.com/dev.abdullahalnirob',
       linkedInLink: 'https://www.linkedin.com/in/abdullah-al-nirob-096994295',
       githubLink: 'https://github.com/abdullahalnirob'
-    },
-    {
-      name: 'Nazmin Akter Noor',
-      designation: "Web Developer & Marketer",
-      image: Nazmin,
-      FBLink: 'https://www.facebook.com/nazmin.noor13',
-      linkedInLink: 'https://www.linkedin.com/in/nazmin-akter-noor',
-      githubLink: 'https://github.com/NazminNoor',
-    },
-    {
-      name: 'Afiya Akter Alpona',
-      designation: "Digital Marketer",
-      image: Alpona,
-      FBLink: 'https://www.facebook.com/profile.php?id=100064763745732',
-      linkedInLink: 'https://www.linkedin.com',
-      githubLink: 'https://github.com',
-    },
-    {
-      name: 'Shah Nawaz',
-      designation: "Web Developer",
-      image: ShahNawaz,
-      FBLink: 'https://www.facebook.com/snh.sabbir',
-      linkedInLink: 'https://www.linkedin.com/in/shah-nawaz-haque',
-      githubLink: 'https://github.com/snh-sabbir'
     },
     {
       name: 'Tanjim Ahemed Chowdhury',
@@ -77,10 +53,33 @@ const Team = () => {
       linkedInLink: 'https://www.linkedin.com/in',
       githubLink: 'https://github.com/Md-Hazrat'
     },
+    {
+      name: 'Md Rifat Islam',
+      designation: "Web Developer",
+      image: rifat,
+      FBLink: 'https://www.facebook.com/Mdrifat.hasan.39395033',
+      linkedInLink: 'https://www.linkedin.com/in',
+      githubLink: 'https://github.com/rifat-islam2026'
+    },
+    {
+      name: 'Ushan Asif',
+      designation: "Web Developer",
+      image: Asif,
+      FBLink: 'https://www.facebook.com/udecipher',
+      linkedInLink: 'https://www.linkedin.com/in/asif-uddin-bhuiyan-1a83951b4',
+      githubLink: 'https://github.com/ushanasif'
+    },
+    {
+      name: 'Arvin Khan Farabi',
+      designation: "Digital Merketer",
+      image: Farabi,
+      FBLink: 'https://www.facebook.com/arvinkhanfarabi',
+      linkedInLink: 'https://www.linkedin.com/in/md-sarawar-tuhin-69aa53231',
+    },
   ];
 
   return (
-    <div className="overflow-x-hidden py-16 px-6 md:px-16 lg:px-36 bg-[right_bottom] md:bg-[right_center]">
+    <div className="overflow-x-hidden py-16 px-6 md:px-16  bg-[right_bottom] md:bg-[right_center]">
       <div className="container">
         <h1
           className="text-5xl text-center font-bold text-gray-800 my-8"
@@ -91,7 +90,7 @@ const Team = () => {
         </h1>
         <div className="bg-slate-100 py-2 px-4 ring-1 ring-gray-300 w-[max-content] rounded-xl justify-center flex items-center mx-auto">
           <h1 className="text-black justify-center flex items-center">
-            <span className="text-[#afafaf]">CodeCraftor</span>{ " "}
+            <span className="text-[#afafaf]">CodeCraftor</span>{" "}
             <TbMathGreater className="mx-2" /> Our Team Members
           </h1>
         </div>
@@ -108,7 +107,7 @@ const Team = () => {
             data-aos-duration="1000"
             className="md:text-xl text-[#173282]"
           >
-            CodeCraftor is a one-stop digital solutions company offering expert web development, SEO, digital marketing, and UI/UX design services. Our skilled team crafts custom websites and applications while optimizing for search engines and delivering engaging user experiences. We help businesses grow with tailored marketing strategies and comprehensive digital support.
+            <strong>CodeCraftor</strong> is a one-stop digital solutions company offering expert web development, SEO, digital marketing, and UI/UX design , Video Editing services. Our skilled team crafts custom websites and applications while optimizing for search engines and delivering engaging user experiences. We help businesses grow with tailored marketing strategies and comprehensive digital support.
           </p>
         </div>
         <section className="py-6 dark:bg-gray-100 dark:text-gray-800 rounded-md">
@@ -133,7 +132,10 @@ const Team = () => {
             </div>
             <div className="grid w-full grid-cols-1 gap-x-10 gap-y-20 sm:grid-cols-2 lg:grid-cols-3">
               {Members.map((member) => (
-                <div key={member.name} className="space-y-4 shadow-md p-4 rounded-md">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  key={member.name} className="space-y-4 shadow-md p-4 rounded-md">
                   <img
                     alt={member.name}
                     className="object-cover ring-1 ring-[#ccc] h-72 w-64 mx-auto mb-4 bg-center rounded-sm"

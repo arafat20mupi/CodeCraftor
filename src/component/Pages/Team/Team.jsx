@@ -1,15 +1,10 @@
-import React from "react";
 import { TbMathGreater } from "react-icons/tb";
 import Teamgoals from "../../../assets/images/team/Teamgoals.png";
-import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import Rafel from "../../../assets/images/team/Rafel.jpg";
 import Arafat from "../../../assets/images/team/Arafat.jpg";
-import Nirob from "../../../assets/images/team/Nirob.png";
-import Tanjim from '../../../assets/images/team/Tanjim.png';
 import Hazrat from '../../../assets/images/team/Hojrat.jpg';
-import rifat from '../../../assets/images/team/rifat.jpg';
 import Asif from '../../../assets/images/team/Asif.jpg';
-import Farabi from '../../../assets/images/team/Farabi.png';
+import Mariya from '../../../assets/images/team/mariya.jpeg';
 
 const Team = () => {
   const Members = [
@@ -17,65 +12,27 @@ const Team = () => {
       name: 'Arafat Islam',
       designation: "CEO & Web Developer",
       image: Arafat,
-      FBLink: 'https://www.facebook.com/arafatislamsani169',
-      linkedInLink: 'https://www.linkedin.com/in/arafatislam03',
-      githubLink: 'https://github.com/arafat20mupi'
     },
     {
       name: 'Saiful Islam Rafel',
       designation: "COO & Web Developer",
       image: Rafel,
-      FBLink: 'https://www.facebook.com/mdsaifulislamrafel',
-      linkedInLink: 'https://www.linkedin.com/in/mdsaifulislamrafel',
-      githubLink: 'https://github.com/mdsaifulislamrafel'
-    },
-    {
-      name: 'Abdullah Al Nirob',
-      designation: "Web Developer",
-      image: Nirob,
-      FBLink: 'https://www.facebook.com/dev.abdullahalnirob',
-      linkedInLink: 'https://www.linkedin.com/in/abdullah-al-nirob-096994295',
-      githubLink: 'https://github.com/abdullahalnirob'
-    },
-    {
-      name: 'Tanjim Ahemed Chowdhury',
-      designation: "Web Developer",
-      image: Tanjim,
-      FBLink: 'https://www.facebook.com/tanjim.ahmedchowdhury.12',
-      linkedInLink: 'https://www.linkedin.com/in/tanjim-ahemed-chowdhury-436b1932b/',
-      githubLink: 'https://github.com/tanjimN4'
-    },
-    {
-      name: 'Md Hazrat Ali',
-      designation: "Web Developer",
-      image: Hazrat,
-      FBLink: 'https://www.facebook.com/mdhazratali.hazrat.000000',
-      linkedInLink: 'https://www.linkedin.com/in',
-      githubLink: 'https://github.com/Md-Hazrat'
-    },
-    {
-      name: 'Md Rifat Islam',
-      designation: "Web Developer",
-      image: rifat,
-      FBLink: 'https://www.facebook.com/Mdrifat.hasan.39395033',
-      linkedInLink: 'https://www.linkedin.com/in',
-      githubLink: 'https://github.com/rifat-islam2026'
     },
     {
       name: 'Ushan Asif',
       designation: "Web Developer",
       image: Asif,
-      FBLink: 'https://www.facebook.com/udecipher',
-      linkedInLink: 'https://www.linkedin.com/in/asif-uddin-bhuiyan-1a83951b4',
-      githubLink: 'https://github.com/ushanasif'
     },
     {
-      name: 'Arvin Khan Farabi',
-      designation: "Digital Merketer",
-      image: Farabi,
-      FBLink: 'https://www.facebook.com/arvinkhanfarabi',
-      linkedInLink: 'https://www.linkedin.com/in/md-sarawar-tuhin-69aa53231',
+      name: 'Md Hazrat Ali',
+      designation: "Web Developer",
+      image: Hazrat,
     },
+    {
+      name : 'Mariya Jeba',
+      designation: "Advisor",
+      image: Mariya
+    }
   ];
 
   return (
@@ -146,17 +103,6 @@ const Team = () => {
                     <p className="text-sm dark:text-gray-600">
                       {member.designation}
                     </p>
-                  </div>
-                  <div className="flex justify-center space-x-4 text-gray-700">
-                    <a href={member.FBLink} target="_blank" rel="noopener noreferrer">
-                      <FaFacebook className="w-5 h-5" />
-                    </a>
-                    <a href={member.linkedInLink} target="_blank" rel="noopener noreferrer">
-                      <FaLinkedin className="w-5 h-5" />
-                    </a>
-                    <a href={member.githubLink} target="_blank" rel="noopener noreferrer">
-                      <FaGithub className="w-5 h-5" />
-                    </a>
                   </div>
                 </div>
               ))}
